@@ -11,5 +11,7 @@ let ComponentFactory = function(htmltag){
 export default new Router({
   routes: [
     { path: '/',                           component: ComponentFactory('home-page'),        name: 'home'},
+    { path: '/mapa',                       component: ComponentFactory('map-page'),         name: 'map'},
+    { path: '/informe',                    component: ComponentFactory('report-page'),      name: 'report'},
   ]
 })

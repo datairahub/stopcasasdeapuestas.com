@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <nav-menu></nav-menu>
     <transition name="fade" mode="out-in">
         <router-view></router-view>
     </transition>

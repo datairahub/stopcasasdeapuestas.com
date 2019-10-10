@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap');
+
+
+/* GENERAL
+
+*****************************************/
+
+::-webkit-scrollbar {
+    width: 0;
+}
+ 
+::-webkit-scrollbar-track {
+    opacity: 0;
+    display: none;
+    -webkit-box-shadow: none; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    opacity: 0;
+    display: none;
+    -webkit-box-shadow: none; 
+}
+
+
+
+
+
+/* MENU
+
+*****************************************/
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    &__wrap {
+        padding: 10px 20px;
+        display: flex;
+    }
+    &__items {
+        flex: 1 0 auto;
+    }
+    &__itemswrap {
+        display: none;
+    }
+    &__launcher {
+        flex: 0 0 20px;
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+        line-height: 0;
+        img {
+            padding: 3px;
+            width: 14px;
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+            transition: opacity 200ms ease;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+
+/* PAGES
+
+*****************************************/
+
+.page {
+    &--home {
+        overflow: auto;
+        min-height: 100vh;
+    }
+    &--wide {
+        display: flex;
+        .page__wrap {
+            max-width: initial;
+            flex: 1 1 50%;
+            max-height: 100vh;
+            overflow-y: scroll;
+        }
+        .page__map {
+            flex: 1 1 50%;
+        }
+    }
+    &__wrap {
+        max-width: 740px;
+        margin: 0 auto;
+    }
+    &__map {
+        background: #f6f6f6;
+    }
+    &__section {
+        padding: 20px;
+        &--head {
+            margin-top: 80px;
+            text-align: center;
+        }
+    }
+    &__logo {
+        width: 100%;
+        max-width: 200px;
+    }
+}

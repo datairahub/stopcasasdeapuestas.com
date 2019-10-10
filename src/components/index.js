@@ -1,5 +1,8 @@
 import Vue from 'vue'
 
+Vue.component('nav-menu',              require('./nav-menu').default);
+
 
 Vue.component('home-page',             require('./home-page').default);
-//Vue.component('d3vue-map-points',    require('./d3vue-map-points').default);
+Vue.component('map-page',              require('./map-page').default);
+Vue.component('report-page',           require('./report-page').default);
