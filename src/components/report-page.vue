@@ -1,7 +1,7 @@
 <template>
   <div class="page page--report">
     <div class="page__wrap">
-      <section class="text">
+      <section class="page__section page__section--text">
         <h3>Introducción</h3>
         <p>En el presente informe se estudia la implantación del fenómeno de las casas de juego en Madrid. Éstas, junto con las apuestas en Internet, han tenido en los últimos años, y siguen teniendo, un fuerte incremento.</p>
         <p>Esa extensión constituye un problema social importante dadas las consecuencias que entraña para la economía de las familias y para la salud colectiva. La ludopatía es, sin duda, una patología social que no cesa de crecer y enraizar en las grandes ciudades.</p>
