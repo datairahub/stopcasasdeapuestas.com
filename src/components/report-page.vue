@@ -1,8 +1,26 @@
 <template>
   <div class="page page--report">
     <div class="page__wrap">
+
+      <section class="page__section page__section--head">
+        <h1 class="page__title">Informe sobre la localización de las casas de juego en Madrid</h1>
+        <p class="page__subtitle">Elaborado por Vicente Pérez Quintana</p>
+        <p class="page__subtitle">Madrid, octubre de 2019</p>
+      </section>
+
+      <section class="page__section page__section--contents">
+        <h4>Índice de contenidos</h4>
+        <ul>
+          <li><a @click="scrollTo('introduccion')">Introducción</a></li>
+          <li><a>Implantación</a></li>
+          <li><a>Determinantes de la localización</a></li>
+          <li><a>Localización en otras ciudades</a></li>
+          <li><a>Cercanía a institutos públicos</a></li>
+        </ul>
+      </section>
+
       <section class="page__section page__section--text">
-        <h3>Introducción</h3>
+        <h3 ref="introduccion">Introducción</h3>
         <p>En el presente informe se estudia la implantación del fenómeno de las casas de juego en Madrid. Éstas, junto con las apuestas en Internet, han tenido en los últimos años, y siguen teniendo, un fuerte incremento.</p>
         <p>Esa extensión constituye un problema social importante dadas las consecuencias que entraña para la economía de las familias y para la salud colectiva. La ludopatía es, sin duda, una patología social que no cesa de crecer y enraizar en las grandes ciudades.</p>
         <p>Los poderes públicos apenas están reaccionando, incluso se hallan casos de administraciones que no admiten que exista un problema al respecto.</p>
@@ -27,6 +45,15 @@
 <script>
 export default {
   name: 'report-page',
+  created: function(){
+    console.log('created');
+  },
+  methods: {
+    scrollTo(refName) {
+      let element = this.$refs[refName];
+      window.scrollTo(0, element.offsetTop - 60);
+    }
+  }
 }
 
 </script>

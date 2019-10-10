@@ -5,11 +5,10 @@
       
       <section class="page__section page__section--head">
         <img class="page__logo" src="/static/logo.svg" alt="Stop Casas de Apuestas Logo">
-        <h1 class="page__title">Stop Casas de Apuestas</h1>
+        <h1 class="page__title" style="display: none;">Stop Casas de Apuestas</h1>
       </section>
 
       <section class="page__section page__section--text">
-        <h3>Intro</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit modi culpa et, deleniti iusto omnis facilis fuga eius nisi dolorum consectetur ut iste laborum a, temporibus sint quo, rem mollitia.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit modi culpa et, deleniti iusto omnis facilis fuga eius nisi dolorum consectetur ut iste laborum a, temporibus sint quo, rem mollitia.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit modi culpa et, deleniti iusto omnis facilis fuga eius nisi dolorum consectetur ut iste laborum a, temporibus sint quo, rem mollitia.</p>

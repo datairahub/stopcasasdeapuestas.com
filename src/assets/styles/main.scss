@@ -36,6 +36,9 @@
     width: 100%;
     background: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    a {
+        color: inherit;
+    }
     &__overlay {
         width: 100%;
         height: calc(100% - 40px);
@@ -177,15 +180,45 @@
     &__map {
         background: #f6f6f6;
     }
-    &__section {
-        padding: 20px;
-        &--head {
-            margin-top: 80px;
-            text-align: center;
-        }
-    }
     &__logo {
         width: 100%;
         max-width: 200px;
     }
+    &__title {
+        font-size: 28px;
+    }
+    &__subtitle {
+        color: #666;
+        font-size: smaller;
+        margin-bottom: 4px;
+    }
+    &__section {
+        padding: 20px;
+        &--head {
+            margin: 80px auto 0;
+            max-width: 400px;
+            text-align: center;
+        }
+        &--contents {
+            h4 {
+                margin-bottom: 4px;
+            }
+        }
+    }
+}
+
+
+/* ANIMATIONS
+
+*****************************************/
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.25s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
