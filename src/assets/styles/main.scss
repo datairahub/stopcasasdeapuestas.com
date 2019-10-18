@@ -121,7 +121,7 @@
             display: none;
         }
         &__itemswrap {
-            display: inline-block;
+            display: inline-block !important;
             vertical-align: top;
             position: static;
             background: transparent;
