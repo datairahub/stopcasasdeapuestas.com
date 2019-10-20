@@ -77,11 +77,50 @@
             }
         }
         &--text {
-            .bullet {
+            ul {
               padding-left: 20px;
               li {
                 list-style: disc;
                 margin-bottom: 12px;
+              }
+            }
+            table {
+              border: transparent;
+              caption {
+                text-align: center;
+                font-weight: 700;
+                margin-bottom: 6px;
+              }
+              tr {
+                border: transparent;
+                + tr td {
+                  border-top: none;
+                }
+              }
+              td {
+                border: 1px solid rgba(128, 128, 128, 0.3);
+                padding: 2px 4px;
+                + td {
+                  border-left: none;
+                }
+                &.num {
+                  text-align: right;
+                }
+              }
+              thead {
+                td {
+                  font-weight: 700;
+                  border-bottom: none;
+                }
+              }
+              tfoot {
+                tr {
+                  border: transparent;
+                }
+                td {
+                  font-size: smaller;
+                  border: transparent;
+                }
               }
             }
         }

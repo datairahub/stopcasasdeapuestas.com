@@ -57,7 +57,7 @@
         <h3 ref="barrios">Datos demográficos de Madrid</h3>
 
         <h3 ref="download">Descarga de datos</h3>
-        <ul class="bullet">
+        <ul>
           <li>Censo de locales de apuestas proporcionado por el Ayto. de Madrid y completado con locales obtenidos por la FRAVM. <a href="/static/data/locales-fravm.csv">Descargar CSV</a>.</li>
           <li>Censo de locales de apuestas a nivel estatal obtenido por Dataira mediante técnicas de scraping. <a href="/static/data/locales-dataira.csv">Descargar CSV</a>.</li>
           <li>Censo de centros educativos públicos no universitarios de la Comunidad de Madrid. <a href="/static/data/educacion-cmadrid.csv">Descargar CSV</a>.</li>

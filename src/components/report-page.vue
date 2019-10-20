@@ -20,6 +20,8 @@
       </section>
 
       <section class="page__section page__section--text">
+
+        <!-- start intro -->
         <h3 ref="introduccion">Introducción</h3>
         <p>En el presente informe se estudia la implantación del fenómeno de las casas de juego en Madrid. Éstas, junto con las apuestas en Internet, han tenido en los últimos años, y siguen teniendo, un fuerte incremento.</p>
         <p>Esa extensión constituye un problema social importante dadas las consecuencias que entraña para la economía de las familias y para la salud colectiva. La ludopatía es, sin duda, una patología social que no cesa de crecer y enraizar en las grandes ciudades.</p>
@@ -37,6 +39,10 @@
         <p>Así, encontramos muchos barrios con un perfil socioeconómico y demográfico parecido al de los barrios con muchos locales que, sin embargo, carecen de ellos o que a lo sumo alojan 1-2.</p>
         <p>La observación de la implantación en otras grandes ciudades españolas confirma la importancia de las ubicaciones centrales vinculadas a zonas comerciales.</p>
         <p>Hay que destacar la localización de un gran número de casas de juego en las proximidades de los institutos públicos: hay 71 IES con uno o más locales en un radio inferior a 500 metros.</p>
+        <!-- end intro -->
+
+        <table-streets-by-number/>
+
       </section>
     </div>
   </div>
