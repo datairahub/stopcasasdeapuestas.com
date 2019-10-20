@@ -1,6 +1,50 @@
 <template>
   <div>
     <div id="map" ref="map" :style="{'height': height+'px'}"></div>
+    <div class="overmap">
+      <div class="overmap__wrap">
+
+        <div class="overmap__menu">
+          <h4>Locales de apuestas</h4>
+          <ul>
+            <li>
+              <input id="locales-depurado" type="checkbox" v-model="localesfravm">
+              <label for="locales-depurado">Datos FRAVM</label>
+            </li>
+            <li>
+              <input id="locales-scraping" type="checkbox" v-model="localesdataira">
+              <label for="locales-scraping">Datos Dataira</label>
+            </li>
+          </ul>
+          <h4>Centros de enseñanza</h4>
+          <ul>
+            <li>
+              <input id="colegios-ayuntamiento" type="checkbox" v-model="educacioncmadrid">
+              <label for="colegios-ayuntamiento">Datos C. Madrid</label>
+            </li>
+          </ul>
+          <h4>Barrios Madrid</h4>
+          <ul>
+            <li>
+              <input id="barrios-madrid" type="checkbox" v-model="barriosmadrid">
+              <label for="barrios-madrid">Datos C. Madrid</label>
+            </li>
+          </ul>
+          <router-link :to="{name:'sources'}">Fuentes y metodología</router-link>
+        </div>
+
+        <div class="overmap__disclaimer" v-if="showDisclaimer">
+          <div class="overmap__disclaimer-wrap">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae magni neque, rem dolores assumenda nisi, quaerat quae ullam illo nam modi eaque ut corrupti quas, mollitia quibusdam quam, sunt repudiandae.</p>
+            <p style="text-align: right;">
+              <button class="cta" @click="showDisclaimer=false">De acuerdo</button>
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -14,12 +58,28 @@ export default {
   data: function() {
     return {
       points: [],
-      lat: 40.402974,
-      lng: -3.706255,
-      zoom: 13,
-      width: 1200,
+      lat: 40.39,
+      lng: -3.67,
+      zoom: 12,
       height: 1200,
       map: {},
+      showDisclaimer: true,
+      localesfravm: false,
+      localesdataira: false,
+      educacioncmadrid: false,
+      barriosmadrid: false,
+      loadedPoints: {
+        localesfravm: false,
+        localesdataira: false,
+        educacioncmadrid: false,
+        barriosmadrid: false,
+      },
+      points: {
+        localesfravm: [],
+        localesdataira: [],
+        educacioncmadrid: [],
+        barriosmadrid: [],
+      }
     }
   },
   mounted: function() {
@@ -34,13 +94,49 @@ export default {
       height: this.height, //d3.select(this.$refs.map).attr('height'),
     });
 
+    this.map.onpoint('click', data=>{
+        //EventBus.$emit('point_click', data);
+        console.log('click', data);
+    })
+
     this.getCanvasSize();
+    this.localesfravm = true;
   },
   methods: {
     getCanvasSize() {
-      this.width = this.$refs.page ? parseInt(this.$refs.page.offsetWidth) : 700;
       this.height = window.innerHeight;
-      console.log(this.height);
+    },
+    loadPoints(points){
+      this.map.loadPoints(points);
+    },
+    removePoints(points){
+      this.map.removePoints(points);
+    }
+  },
+  watch: {
+    localesfravm(val){
+      if(val && !this.loadedPoints.localesfravm){
+        d3.csv("static/data/locales-fravm.csv").then(data=>{
+          this.loadedPoints.localesfravm = true;
+          this.points.localesfravm = data;
+          this.loadPoints(this.points.localesfravm)
+        });
+      }else{
+        this.loadedPoints.localesfravm = false;
+        this.removePoints(this.points.localesfravm)
+      }
+    },
+    localesdataira(val){
+      if(val && !this.loadedPoints.localesdataira){
+        d3.csv("static/data/locales-dataira.csv").then(data=>{
+          this.loadedPoints.localesdataira = true;
+          this.points.localesdataira = data;
+          this.loadPoints(this.points.localesdataira)
+        });
+      }else{
+        this.loadedPoints.localesdataira = false;
+        this.removePoints(this.points.localesdataira)
+      }
     }
   }
 }
@@ -48,9 +144,67 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
 #map {
   z-index: 9;
+}
+
+.overmap {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &__wrap {
+    padding: 60px 20px 20px;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  &__menu {
+    padding: 10px 16px 10px 10px;
+    display: inline-block;
+    background: white;
+    pointer-events: all;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    h4 {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    ul + h4 {
+      margin-top: 12px;
+    }
+    a {
+      margin-top: 12px;
+      display: inline-block;
+    }
+  }
+
+  &__disclaimer {
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    &-wrap {
+      padding: 10px;
+      display: inline-block;
+      background: white;
+      pointer-events: all;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      max-width: 360px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+
 }
 
 

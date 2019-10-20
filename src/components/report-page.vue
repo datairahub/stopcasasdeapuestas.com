@@ -46,7 +46,6 @@
 export default {
   name: 'report-page',
   created: function(){
-    console.log('created');
   },
   methods: {
     scrollTo(refName) {

@@ -14,6 +14,7 @@ class D3MapPoints extends D3Map  {
         let self = this;
         let tdata = {};
 
+/*
         // comprobamos puntos locales
         self.data.forEach(function(d){
             if(points.indexOf(d) === -1){
@@ -25,7 +26,7 @@ class D3MapPoints extends D3Map  {
                 tdata[d.id] = d
             }
         });
-
+*/
         // comprobamos datos remotos
         points.forEach(function(d){
 
@@ -36,7 +37,7 @@ class D3MapPoints extends D3Map  {
                 let circle = new L.circle((lnglat), self.cfg.circlesize, {
                     color: d.color,
                     opacity:1,
-                    fillOpacity:.5,
+                    fillOpacity:.8,
                     className: 'point c-'+d.class+' id-'+d.id,
                 })
                 circle.addTo(self.map)
@@ -55,6 +56,17 @@ class D3MapPoints extends D3Map  {
             }
         }
 
+    }
+
+    removePoints(points){
+        // comprobamos datos remotos
+        points.forEach(d=>{
+            // punto remoto existe en local -> borramos
+            if(this.data.indexOf(d) > -1){
+                this.map.removeLayer(this.circles[d.id])
+                //if(this.circles[d.id]) delete this.circles[d.id]
+            }
+        })
     }
 
     onpoint(listener, fn){
