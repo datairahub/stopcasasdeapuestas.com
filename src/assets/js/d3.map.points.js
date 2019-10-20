@@ -11,60 +11,31 @@ class D3MapPoints extends D3Map  {
         }
     }
     loadPoints(points){
-        let self = this;
-        let tdata = {};
 
-/*
-        // comprobamos puntos locales
-        self.data.forEach(function(d){
-            if(points.indexOf(d) === -1){
-                // punto local NO existe en remoto -> borramos
-                self.map.removeLayer(self.circles[d.id])
-                delete self.circles[d.id]
-            }else{
-                // punto local SI existe en remoto -> guardamos
-                tdata[d.id] = d
-            }
+        // añadimos puntos al dataset
+        points.forEach(d=>{
+            let lnglat = new L.LatLng(+d.latitude, +d.longitude);
+            let circle = new L.circle((lnglat), this.cfg.circlesize, {
+                color: d.color,
+                opacity:1,
+                fillOpacity:.8,
+                className: 'point c-'+d.class+' id-'+d.id,
+            })
+            circle.addTo(this.map)
+            circle.on('click', e=>{
+                this.pointevents.click(d)
+            })
+            this.circles[d.id] = circle
         });
-*/
-        // comprobamos datos remotos
-        points.forEach(function(d){
-
-            // punto remoto no existe en local -> creamos
-            if(self.data.indexOf(d) === -1){
-                // puntos a crear
-                let lnglat = new L.LatLng(+d.latitude, +d.longitude);
-                let circle = new L.circle((lnglat), self.cfg.circlesize, {
-                    color: d.color,
-                    opacity:1,
-                    fillOpacity:.8,
-                    className: 'point c-'+d.class+' id-'+d.id,
-                })
-                circle.addTo(self.map)
-                circle.on('click', function(){
-                    self.pointevents.click(d)
-                })
-                self.circles[d.id] = circle
-                tdata[d.id] = d
-            }
-        })
-
-        self.data = []
-        for (let property in tdata) {
-            if (tdata.hasOwnProperty(property)) {
-                self.data.push(tdata[property])
-            }
-        }
-
     }
 
     removePoints(points){
-        // comprobamos datos remotos
+        // eliminamos puntos del dataset
         points.forEach(d=>{
-            // punto remoto existe en local -> borramos
-            if(this.data.indexOf(d) > -1){
+            // punto existe en dataset -> borramos
+            if(this.circles[d.id]){
                 this.map.removeLayer(this.circles[d.id])
-                //if(this.circles[d.id]) delete this.circles[d.id]
+                delete this.circles[d.id]
             }
         })
     }

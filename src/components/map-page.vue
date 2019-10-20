@@ -137,6 +137,18 @@ export default {
         this.loadedPoints.localesdataira = false;
         this.removePoints(this.points.localesdataira)
       }
+    },
+    educacioncmadrid(val){
+      if(val && !this.loadedPoints.educacioncmadrid){
+        d3.csv("static/data/educacion-cmadrid.csv").then(data=>{
+          this.loadedPoints.educacioncmadrid = true;
+          this.points.educacioncmadrid = data;
+          this.loadPoints(this.points.educacioncmadrid)
+        });
+      }else{
+        this.loadedPoints.educacioncmadrid = false;
+        this.removePoints(this.points.educacioncmadrid)
+      }
     }
   }
 }
