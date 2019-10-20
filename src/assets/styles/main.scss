@@ -76,6 +76,15 @@
                 margin-bottom: 4px;
             }
         }
+        &--text {
+            .bullet {
+              padding-left: 20px;
+              li {
+                list-style: disc;
+                margin-bottom: 12px;
+              }
+            }
+        }
     }
 }
 

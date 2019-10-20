@@ -9,6 +9,7 @@ class D3MapPoints extends D3Map  {
         this.pointevents = {
             click: ()=>{}
         }
+        this.popup = new L.Popup();
     }
     loadPoints(points){
 
@@ -23,7 +24,10 @@ class D3MapPoints extends D3Map  {
             })
             circle.addTo(this.map)
             circle.on('click', e=>{
-                this.pointevents.click(d)
+                this.popup.setLatLng(e.latlng);
+                this.popup.setContent(d.name);
+                this.map.openPopup(this.popup);
+                this.pointevents.click(d);
             })
             this.circles[d.id] = circle
         });

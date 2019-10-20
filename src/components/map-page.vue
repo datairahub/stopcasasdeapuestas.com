@@ -31,11 +31,22 @@
             </li>
           </ul>
           <router-link :to="{name:'sources'}">Fuentes y metodología</router-link>
+          <div class="legend" v-show="localesfravm||localesdataira||educacioncmadrid||barriosmadrid">
+            <h4>Leyenda</h4>
+            <ul>
+              <li class="localesfravm-ayto" v-show="localesfravm"><i></i><span>Censo Ayto. Madrid</span></li>
+              <li class="localesfravm-noayto" v-show="localesfravm"><i></i><span>Localizados por FRAVM</span></li>
+              <li class="localesdataira-codere" v-show="localesdataira"><i></i><span>Locales de Codere</span></li>
+              <li class="localesdataira-sportium" v-show="localesdataira"><i></i><span>Locales de Sportium</span></li>
+              <li class="localesdataira-luckia" v-show="localesdataira"><i></i><span>Locales de Luckia</span></li>
+              <li class="educacioncmadrid" v-show="educacioncmadrid"><i></i><span>Centros educativos</span></li>
+            </ul>
+          </div>
         </div>
 
         <div class="overmap__disclaimer" v-if="showDisclaimer">
           <div class="overmap__disclaimer-wrap">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae magni neque, rem dolores assumenda nisi, quaerat quae ullam illo nam modi eaque ut corrupti quas, mollitia quibusdam quam, sunt repudiandae.</p>
+            <p>Los datos aqui mostrados proceden de diversas <router-link :to="{name:'sources'}">fuentes</router-link> y su posición puede no ser exacta.</p>
             <p style="text-align: right;">
               <button class="cta" @click="showDisclaimer=false">De acuerdo</button>
             </p>
@@ -196,6 +207,34 @@ export default {
       margin-top: 12px;
       display: inline-block;
     }
+
+    .legend {
+      margin-top: 12px;
+      li {
+        line-height: 0;
+        margin: 10px 0;
+      }
+      i {
+        display: inline-block;
+        vertical-align: top;
+        width: 12px;
+        height: 12px;
+        background: grey;
+        border-radius: 100%;
+        margin-right: 2px;
+      }
+      span {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 12px;
+      }
+      .localesfravm-ayto i {background: #4b4c7a; }
+      .localesfravm-noayto i {background: #c855bc; }
+      .localesdataira-codere i {background: #58dada; }
+      .localesdataira-sportium i {background: #7984ee; }
+      .localesdataira-luckia i {background: #a9d2ff; }
+      .educacioncmadrid i {background: #ffa258; }
+    }
   }
 
   &__disclaimer {
@@ -219,6 +258,11 @@ export default {
 
 }
 
+
+/* popup */
+.leaflet-popup-content-wrapper {
+  border-radius: 5px !important;
+}
 
 /* required styles */
 .leaflet-pane,
