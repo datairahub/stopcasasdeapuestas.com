@@ -5,28 +5,10 @@
       <tr><td>Calle</td><td class="num">Nº de locales</td></tr>
     </thead>
     <tbody>
-      <tr><td>Alcalá</td><td class="num">14</td></tr>
-      <tr><td>Bravo Murillo</td><td class="num">14</td></tr>
-      <tr><td>General Ricardos</td><td class="num">10</td></tr>
-      <tr><td>Marcelo Usera</td><td class="num">9</td></tr>
-      <tr><td>Embajadores</td><td class="num">5</td></tr>
-      <tr><td>Lopez de Hoyos</td><td class="num">5</td></tr>
-      <tr><td>Vía Carpetana</td><td class="num">5</td></tr>
-      <tr><td>Doctor Esquerdo</td><td class="num">4</td></tr>
-      <tr><td>Extremadura</td><td class="num">4</td></tr>
-      <tr><td>Oca</td><td class="num">4</td></tr>
-      <tr><td>Albufera</td><td class="num">3</td></tr>
-      <tr><td>Atocha</td><td class="num">3</td></tr>
-      <tr><td>Carretas</td><td class="num">3</td></tr>
-      <tr><td>Cartagena</td><td class="num">3</td></tr>
-      <tr><td>Delicias</td><td class="num">3</td></tr>
-      <tr><td>General Margallo</td><td class="num">3</td></tr>
-      <tr><td>Institución Libre de Enseñanza</td><td class="num">3</td></tr>
-      <tr><td>Monforte de Lemos</td><td class="num">3</td></tr>
-      <tr><td>Montera</td><td class="num">3</td></tr>
-      <tr><td>Pedro Laborde</td><td class="num">3</td></tr>
-      <tr><td>Antonio López</td><td class="num">2</td></tr>
-      <tr><td>Batalla del Salado</td><td class="num">2</td></tr>
+      <tr v-for="row in table">
+        <td>{{row[0]}}</td>
+        <td class="num">{{row[1]}}</td>
+      </tr>
     </tbody>
     <tfoot>
       <tr>
@@ -39,6 +21,71 @@
 
 <script>
 export default {
-  name: 'table-streets-by-number'
+  name: 'table-streets-by-number',
+  data: function(){
+    return {
+      table: [
+        ["Alcalá",14],
+        ["Bravo Murillo",14],
+        ["General Ricardos",10],
+        ["Marcelo Usera",9],
+        ["Embajadores",5],
+        ["Lopez de Hoyos",5],
+        ["Vía Carpetana",5],
+        ["Doctor Esquerdo",4],
+        ["Extremadura",4],
+        ["Oca",4],
+        ["Albufera",3],
+        ["Atocha",3],
+        ["Carretas",3],
+        ["Cartagena",3],
+        ["Delicias",3],
+        ["General Margallo",3],
+        ["Institución Libre de Enseñanza",3],
+        ["Monforte de Lemos",3],
+        ["Montera",3],
+        ["Pedro Laborde",3],
+        ["Antonio López",2],
+        ["Batalla del Salado",2],
+        ["Camino viejo de Leganés",2],
+        ["Castellana",2],
+        ["Corregidor Diego de Valderrábano",2],
+        ["Cristo de la Victoria",2],
+        ["Dolores Barranco",2],
+        ["Emilio Vargas",2],
+        ["Felipe Castro",2],
+        ["Fermín Caballero",2],
+        ["Fernando el Católico",2],
+        ["Ferroviarios",2],
+        ["Francisco Silvela",2],
+        ["Francos Rodríguez",2],
+        ["General Perón",2],
+        ["Gran Avenida",2],
+        ["Gran Vía",2],
+        ["Granada",2],
+        ["Guzmán el Bueno",2],
+        ["Huerta de Castañeda",2],
+        ["Isla Paragua",2],
+        ["Jose Prat",2],
+        ["Laguna",2],
+        ["Magallanes",2],
+        ["Manco de Lepanto",2],
+        ["Marcelino Camacho",2],
+        ["Martínez de la Riva",2],
+        ["Mayor",2],
+        ["Menéndez Álvaro",2],
+        ["Monteigueldo",2],
+        ["Niza",2],
+        ["Pablo Neruda",2],
+        ["Peña Prieta",2],
+        ["Ponferrada",2],
+        ["Reina Victoria",2],
+        ["San Cipriano",2],
+        ["Santa María de la Cabeza",2],
+        ["Seseña",2],
+        ["Tembleque",2],
+      ]
+    }
+  }
 }
 </script>
