@@ -7,38 +7,7 @@ Build with [D3](https://d3js.org/), and based on this [block](https://bl.ocks.or
 ## Component
 
 ```html
-<template>
-    <div>
-        barchart
-        <div ref="chart" style="height: 300px"></div>
-    </div>
-</template>
-
-
-<script>
-import D3BarChart from './d3.barchart';
-import {select} from 'd3-selection';
-const d3 = {select}
-
-export default {
-    name: 'bar-chart',
-    data: function(){
-        return {
-            chart: {},
-        }
-    },
-    props: ['config', 'datum', 'title'],
-    mounted: function(){
-
-        this.chart = new D3BarChart(
-            d3.select(this.$refs.chart),
-            this.datum,
-            this.config
-        )
-
-    }
-}
-</script>
+<line-chart :config="config" :datum="datum" :title="title" :source="source"></line-chart>
 ```
 
 ## Data format

@@ -41,8 +41,12 @@
         <p>Hay que destacar la localización de un gran número de casas de juego en las proximidades de los institutos públicos: hay 71 IES con uno o más locales en un radio inferior a 500 metros.</p>
         <!-- end intro -->
 
+        <locals-by-rent/>
+        
+
         <locals-by-distric/>
 
+        
         <table-streets-by-number/>
 
       </section>

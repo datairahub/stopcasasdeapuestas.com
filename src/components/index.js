@@ -12,6 +12,8 @@ Vue.component('contact-page',                     require('./contact-page').defa
 // Sections
 Vue.component('table-streets-by-number',          require('./sections/table-streets-by-number').default);
 Vue.component('locals-by-distric',                require('./sections/locals-by-distric').default);
+Vue.component('locals-by-rent',                   require('./sections/locals-by-rent').default);
 
 // Charts
 Vue.component('bar-chart',                        require('./charts/barchart/bar-chart').default);
+Vue.component('line-chart',                       require('./charts/linechart/line-chart').default);

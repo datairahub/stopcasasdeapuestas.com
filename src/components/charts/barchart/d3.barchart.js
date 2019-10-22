@@ -18,7 +18,7 @@ class D3BarChart{
 
         // Default configuration
         this.cfg = {
-            margin: {top: 10, right: 30, bottom: 50, left: 40},
+            margin: {top: 10, right: 30, bottom: 20, left: 40},
             key: 'key',
             value: 'value',
             labelRotation: 0,
@@ -38,7 +38,7 @@ class D3BarChart{
         });
 
         // Set up dimensions
-        this.cfg.width = parseInt(this.selection.node().offsetWidth) - this.cfg.margin.left - this.cfg.margin.right,
+        this.cfg.width = parseInt(this.selection.node().offsetWidth) - this.cfg.margin.left - this.cfg.margin.right;
         this.cfg.height = parseInt(this.selection.node().offsetHeight)- this.cfg.margin.top - this.cfg.margin.bottom;
 
         // Set up scales domain
