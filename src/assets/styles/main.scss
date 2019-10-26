@@ -4,7 +4,7 @@
 /* GENERAL
 
 *****************************************/
-
+/*
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -20,7 +20,7 @@
     display: none;
     -webkit-box-shadow: none; 
 }
-
+*/
 
 /* PAGES
 
@@ -46,8 +46,13 @@
     &__wrap {
         max-width: 740px;
         margin: 0 auto;
-        overflow: auto;
+        overflow: visible;
         padding-top: 40px;
+        &--big {
+          max-width: 1200px;
+          padding-top: 0;
+          overflow-x: scroll;
+        }
     }
     &__map {
         background: #f6f6f6;
@@ -68,7 +73,7 @@
         padding: 20px;
         &--head {
             margin: 80px auto 0;
-            max-width: 400px;
+            max-width: 460px;
             text-align: center;
         }
         &--contents {
@@ -79,6 +84,7 @@
         &--text {
             ul {
               padding-left: 20px;
+              margin-bottom: 24px;
               li {
                 list-style: disc;
                 margin-bottom: 12px;
@@ -114,11 +120,7 @@
                 }
               }
               tfoot {
-                tr {
-                  border: transparent;
-                }
-                td {
-                  font-size: smaller;
+                tr, td {
                   border: transparent;
                 }
               }
@@ -126,6 +128,18 @@
         }
     }
 }
+
+
+@media screen and (min-width: 740px) {
+  .page {
+    &__wrap {
+      &--big {
+        overflow-x: auto;
+      }
+    }
+  }
+}
+
 
 /* BUTTONS
 
