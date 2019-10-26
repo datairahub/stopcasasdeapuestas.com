@@ -46,6 +46,7 @@ configuration = {
   labels: false,
   dateField: 'date',
   dateFormat: '%Y-%m-%d',
+  dateFormatOutput: '%Y-%m-%d',
   colorScheme: 'schemeCategory10',
   colorKeys: {},
   curve: 'curveLinear',
@@ -64,6 +65,7 @@ configuration = {
 - **labels**: (strings array). Labels to display (1:1 with keys). If set to false, labels will be each key.
 - **dateField**: (string). Field to compute each horizontal axis division.
 - **dateFormat**: (string). How to parse `dateField` field. [See more info](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format).
+- **dateFormatOutput**: (string). How to output `dateField` field. [See more info](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format).
 - **colorScheme**: (string OR array). Color scheme to use automatically in slices. If set as string, a d3 [out-of-the-box color scheme](https://github.com/d3/d3-scale-chromatic) will be used. If set as array, a custom color scheme with these colors will be used.
 - **colorKeys**: (object). Key-value color override.
 - **curve**: (string). Interpolation curve. [See more info](https://bl.ocks.org/d3noob/ced1b9b18bd8192d2c898884033b5529).

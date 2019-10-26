@@ -40,6 +40,7 @@ class D3LineChart{
             labels: false, // Labels to display
             dateField: 'date',
             dateFormat: '%Y-%m-%d', // https://github.com/d3/d3-time-format/blob/master/README.md#locale_format
+            dateFormatOutput: '%Y-%m-%d', // https://github.com/d3/d3-time-format/blob/master/README.md#locale_format
             colorScheme: 'schemeCategory10', // More schemes in https://github.com/d3/d3-scale-chromatic
             colorKeys: {},
             curve: 'curveLinear', // More examples in https://bl.ocks.org/d3noob/ced1b9b18bd8192d2c898884033b5529
@@ -78,7 +79,7 @@ class D3LineChart{
 
         // Format date functions
         this.parseTime = d3.timeParse(this.cfg.dateFormat);
-        this.formatTime = d3.timeFormat('%d-%m-%Y');
+        this.formatTime = d3.timeFormat(this.cfg.dateFormatOutput);
 
         // Calcule transpose data
         this.tdata = [];
@@ -264,7 +265,9 @@ class D3LineChart{
             .attr("transform", `translate(0,${this.cfg.height})`)
             .call(
                 d3.axisBottom(this.xScale)
+                    .tickFormat(this.formatTime)
                     .ticks(this.cfg.xScaleTicks, this.cfg.xScaleFormat)
+
             );
 
         // Set up line function
