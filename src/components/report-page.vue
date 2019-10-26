@@ -247,9 +247,7 @@
 
         <p>Otra variable a considerar es la tasa de desempleo por barrios: número de personas desempleadas/población activa de 16 y más años. No se cuenta con ese dato, sino con uno aproximado: la tasa absoluta de paro. Por ella se entiende la proporción de paro registrado de cada barrio sobre el total de la población (activa más inactiva) de 16 y más años. Se aprecia una asociación moderada entre la tasa y el número de locales: chi cuadrado igual a 36,8, con p = 0.002, y coeficiente de contingencia igual a 0,48 sobre un máximo de 0,89. Se cumple que los barrios con menor intensidad del desempleo tienen pocas casas de juego, mientras que éstas se concentran en los barrios con tasas altas y medias.</p>
         
-        <p>TABLA</p>
-        
-        <p>TABLA</p>
+        <table-neighborhoods-by-unemployment/>
 
         <p>Las tasas de paro más altas se producen en los barrios del sur y este de la ciudad, donde también se localizan más locales de juego. La correlación no es alta, sin embargo, como se observa en el diagrama de dispersión. En éste no se delinea una curva bien definida, sino que la nube de puntos es amorfa. La curva de promedios no ponderados de la tasa de paro muestra un ascenso según aumenta el número de locales hasta 8. Ahí baja, para luego volver a subir. Muchos barrios con tasas medias tienen bastantes establecimientos. La misma información se observa en el diagrama de cajas.</p>
         
@@ -265,9 +263,7 @@
 
         <p>Una variable con acusado poder de discriminación del estatus social de los barrios es el nivel de estudios acabados de la población residente. La web municipal ofrece ese dato referido a la población de 25 y más años. A partir de él se ha elaborado para cada barrio el índice de proporción de población de 25 y más años analfabeta, sin estudios o solo con estudios primarios. La tabla de contingencia que sigue muestra una leve relación entre ambas variables, pues el chi cuadrado asciende a 31,1, que es significativo para un valor p = 0.05. El coeficiente de contingencia sube a 0,44, sobre un máximo de 0,89. Se observa que en los barrios en los que la población tiene un nivel educativo elevado hay pocos locales y, al revés, en los barrios con proporciones superiores a la media municipal de habitantes con bajo nivel de estudios hay muchos locales.</p>
 
-        <p>TABLA</p>
-
-        <p>TABLA</p>
+        <table-neighborhoods-by-studies/>
 
         <p>Pero, como ocurre a propósito de las variables ya analizadas, el grado de la asociación no es fuerte en tanto que también hay muchos barrios con bajo nivel de estudios y pocos locales y al revés, barrios con nivel medio o alto y muchos locales. La asociación «bajo nivel-muchos locales» es clara a propósito de Latina, Carabanchel, Usera y Puente de Vallecas, no así a propósito de Centro, Chamberí y Tetuán. A su vez, la asociación «alto nivel-pocos locales» es cierta para Salamanca, Chamartín, Moncloa y barrios periféricos de Hortaleza y Fuencarral, no así para Villaverde, Villa de Vallecas, Casco Histórico de Vicálvaro o el Gran San Blas. Se repiten aquí grosso modo los resultados que destacamos respecto de las variables renta media y tasa absoluta de paro. A mayor abundamiento, en el último gráfico que se inserta a continuación se aprecia cómo, en particular, son los barrios con 9-10 y 20 locales los que más rompen la linealidad de la relación, a saber, entre otros, Sol, Palos de Moguer, Castillejos, Quintana, Gaztambide, Cuatro Caminos… Todos ellos, barrios céntricos con niveles educativos en la media o por encima de la media, pero con muchos locales. </p>
         
@@ -287,9 +283,7 @@
 
         <p>El análisis de contingencia repite los resultados hasta ahora obtenidos: la relación de dependencia (distancia-locales) no es significativa, (chi cuadrado = 23.5, con p = 0.102), el coeficiente de contingencia es moderado (0,39 sobre un máximo de 0,89, pero con una p demasiado alta). Sucede que, si bien la mayoría de los locales se localizan en las dos primeras coronas, en ellas, asimismo, están muchos barrios sin o con muy pocos locales. Aquí la polarización sur-norte, en relación a Sol, es muy importante. En el diagrama de cajas se observa cómo la mayor dispersión se produce en la segunda y tercera coronas, en las que se localizan preferentemente los barrios con 5 y más locales.</p>
 
-        <p>TABLA</p>
-
-        <p>TABLA</p>
+        <table-neighborhoods-by-distance/>
 
         <p>SCATTERPLOT</p>
 
