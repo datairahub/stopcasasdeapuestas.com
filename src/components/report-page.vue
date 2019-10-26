@@ -311,9 +311,7 @@
 
         <p>La densidad, igualmente, muestra una relación de dependencia moderada con la distribución del número de locales. Así, el chi cuadrado sube a 51,5 (p = muy baja) y el coeficiente de contingencia es 0,53, sobre un máximo de 0,89. A más densidad, más locales. Pero, como en los casos anteriores, hay muchos barrios con densidades elevadas y pocos locales. De ahí la moderación de la fuerza de la relación.</p>
 
-        <p>TABLA</p>
-
-        <p>TABLA</p>
+        <table-neighborhoods-by-density/>
 
         <p>MAPA</p>
 
@@ -327,9 +325,7 @@
 
         <p>Se aprecia una asociación muy débil entre el peso de la población de 16-29 años por barrios y el número de locales: el chi cuadrado sube a 24,8, con un p = 0.074, significativo para un nivel de confianza del 92,6%. A su vez, el coeficiente de contingencia es bajo: 0,4, sobre un máximo de 0,89. No se perfila una tendencia clara, como muestra el diagrama de dispersión. El número de locales aumenta según lo hace el peso de la juventud. La presencia de casas de juego es más probable en los barrios que se mueven alrededor de la media o algo por encima en cuanto al % de jóvenes.</p>
 
-        <p>TABLA</p>
-
-        <p>TABLA</p>
+        <table-neighborhoods-by-youngs/>
 
         <p>MAPA</p>
 
