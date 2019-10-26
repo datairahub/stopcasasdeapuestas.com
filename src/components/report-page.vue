@@ -295,9 +295,7 @@
 
         <p>Se toma la población de los barrios como un indicador de tamaño. La relación es claramente significativa, ya que alcanza un chi cuadrado muy significativo (53,1, con p muy bajo), si bien el coeficiente que mide el grado de la relación es moderado (0,54, sobre un máximo de 0,89). Se produce la polaridad barrios pequeños-pocos locales y barrios grandes- muchos locales. Aun así, hay que destacar los residuos positivos muy elevados de los barrios grandes en el intervalo de 4-6 locales.</p>
 
-        <p>TABLA</p>
-
-        <p>TABLA</p>
+        <table-neighborhoods-by-poblation/>
 
         <p>La media no ponderada del tamaño según el número de locales aumenta en los tramos más bajos del número de locales, para luego zigzaguear. Nótese en el diagrama de cajas que la mediana aumenta significativamente en los barrios medianos y grandes respecto de los pequeños y muy pequeños y, asimismo, nótese que todos los barrios a partir de 20.000 habitantes tienen al menos un local.</p>
 

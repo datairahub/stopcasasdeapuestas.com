@@ -18,6 +18,7 @@ Vue.component('table-neighborhoods-by-locals',          require('./sections/tabl
 Vue.component('table-neighborhoods-by-unemployment',    require('./sections/table-neighborhoods-by-unemployment').default);
 Vue.component('table-neighborhoods-by-studies',         require('./sections/table-neighborhoods-by-studies').default);
 Vue.component('table-neighborhoods-by-distance',        require('./sections/table-neighborhoods-by-distance').default);
+Vue.component('table-neighborhoods-by-poblation',       require('./sections/table-neighborhoods-by-poblation').default);
 Vue.component('table-regression',                       require('./sections/table-regression').default);
 
 Vue.component('locals-by-distric',                      require('./sections/locals-by-distric').default);
