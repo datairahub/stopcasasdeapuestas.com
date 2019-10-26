@@ -3,7 +3,7 @@
     <div class="page__wrap">
 
       <section class="page__section page__section--head">
-        <h1 class="page__title">Metodologías y fuentes de datos</h1>
+        <h1 class="page__title">Metodologías empleadas en el informe y la extracción de datos</h1>
       </section>
 
       <section class="page__section page__section--contents">
@@ -12,7 +12,6 @@
           <li><a @click="scrollTo('locales')">Datos de locales de apuestas</a></li>
           <li><a @click="scrollTo('educacion')">Datos de centros educativos de la C. Madrid</a></li>
           <li><a @click="scrollTo('barrios')">Datos demográficos de Madrid</a></li>
-          <li><a @click="scrollTo('download')">Descarga de datos</a></li>
         </ul>
       </section>
 
@@ -38,13 +37,6 @@
         <p>Última actualización de los datos: abril de 2019</p>
 
         <h3 ref="barrios">Datos demográficos de Madrid</h3>
-
-        <h3 ref="download">Descarga de datos</h3>
-        <ul>
-          <li>Censo de locales de apuestas proporcionado por el Ayto. de Madrid y completado con locales obtenidos por la FRAVM. <a href="/static/data/locales-fravm.csv">Descargar CSV</a>.</li>
-          <li>Censo de locales de apuestas a nivel estatal obtenido por Dadasign mediante técnicas de scraping. <a href="/static/data/locales-dataira.csv">Descargar CSV</a>.</li>
-          <li>Censo de centros educativos públicos no universitarios de la Comunidad de Madrid. <a href="/static/data/educacion-cmadrid.csv">Descargar CSV</a>.</li>
-        </ul>
 
         <br><br><br>
 

@@ -1,11 +1,13 @@
 import * as L from "leaflet"
 import 'leaflet-providers'
 import 'leaflet-gesture-handling'
+import {select} from 'd3-selection';
+const d3 = {select}
 
 class D3Map {
     constructor(selection, data, config = {}) {
         let self = this;
-        this.selection = selection;
+        this.selection = d3.select(selection);
         this.data = data;
         this.points = [];
         this.events = {
@@ -29,7 +31,6 @@ class D3Map {
 
         this.cfg.width = parseInt(this.selection.node().offsetWidth) - this.cfg.margin.left - this.cfg.margin.right,
         this.cfg.height = parseInt(this.selection.node().offsetHeight)- this.cfg.margin.top - this.cfg.margin.bottom;
-
 
         this.initGraph();
 

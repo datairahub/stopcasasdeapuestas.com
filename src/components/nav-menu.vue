@@ -14,6 +14,7 @@
                         <li class="proposal"><router-link :to="{name:'proposal'}">Propuestas</router-link></li>
                         <li class="sources"><router-link :to="{name:'sources'}">Metodología</router-link></li>
                         <li class="map"><router-link :to="{name:'map'}">Mapa</router-link></li>
+                        <li class="sources"><router-link :to="{name:'data'}">Datos</router-link></li>
                         <li class="contact"><router-link :to="{name:'contact'}">Contacto</router-link></li>
                     </ul>
                 </div>

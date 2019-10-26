@@ -1,7 +1,7 @@
 <template>
   <div>
     <table>
-      <caption>Barrios según la proporción de jóvenes y número de locales</caption>
+      <caption>Barrios según la proporción de 65 y más años y número de locales</caption>
       <thead>
         <tr>
           <td></td>
@@ -67,7 +67,7 @@
 
 <script>
 export default {
-  name: 'table-neighborhoods-by-youngs',
+  name: 'table-neighborhoods-by-senility',
   data: function(){
     return {
       table: [
