@@ -12,8 +12,8 @@
               <label for="locales-depurado">Datos FRAVM</label>
             </li>
             <li>
-              <input id="locales-scraping" type="checkbox" v-model="localesdataira">
-              <label for="locales-scraping">Datos Dataira</label>
+              <input id="locales-scraping" type="checkbox" v-model="localesdadasign">
+              <label for="locales-scraping">Datos Dadasign</label>
             </li>
           </ul>
           <h4>Centros de enseñanza</h4>
@@ -23,22 +23,15 @@
               <label for="colegios-ayuntamiento">Datos C. Madrid</label>
             </li>
           </ul>
-          <h4>Barrios Madrid</h4>
-          <ul>
-            <li>
-              <input id="barrios-madrid" type="checkbox" v-model="barriosmadrid">
-              <label for="barrios-madrid">Datos C. Madrid</label>
-            </li>
-          </ul>
           <router-link :to="{name:'sources'}">Fuentes y metodología</router-link>
-          <div class="legend" v-show="localesfravm||localesdataira||educacioncmadrid||barriosmadrid">
+          <div class="legend" v-show="localesfravm||localesdadasign||educacioncmadrid">
             <h4>Leyenda</h4>
             <ul>
               <li class="localesfravm-ayto" v-show="localesfravm"><i></i><span>Censo Ayto. Madrid</span></li>
               <li class="localesfravm-noayto" v-show="localesfravm"><i></i><span>Localizados por FRAVM</span></li>
-              <li class="localesdataira-codere" v-show="localesdataira"><i></i><span>Locales de Codere</span></li>
-              <li class="localesdataira-sportium" v-show="localesdataira"><i></i><span>Locales de Sportium</span></li>
-              <li class="localesdataira-luckia" v-show="localesdataira"><i></i><span>Locales de Luckia</span></li>
+              <li class="localesdadasign-codere" v-show="localesdadasign"><i></i><span>Locales de Codere</span></li>
+              <li class="localesdadasign-sportium" v-show="localesdadasign"><i></i><span>Locales de Sportium</span></li>
+              <li class="localesdadasign-luckia" v-show="localesdadasign"><i></i><span>Locales de Luckia</span></li>
               <li class="educacioncmadrid" v-show="educacioncmadrid"><i></i><span>Centros educativos</span></li>
             </ul>
           </div>
@@ -76,20 +69,17 @@ export default {
       map: {},
       showDisclaimer: true,
       localesfravm: false,
-      localesdataira: false,
+      localesdadasign: false,
       educacioncmadrid: false,
-      barriosmadrid: false,
       loadedPoints: {
         localesfravm: false,
-        localesdataira: false,
+        localesdadasign: false,
         educacioncmadrid: false,
-        barriosmadrid: false,
       },
       points: {
         localesfravm: [],
-        localesdataira: [],
+        localesdadasign: [],
         educacioncmadrid: [],
-        barriosmadrid: [],
       }
     }
   },
@@ -112,6 +102,7 @@ export default {
 
     this.getCanvasSize();
     this.localesfravm = true;
+    this.localesdadasign = true;
   },
   methods: {
     getCanvasSize() {
@@ -137,16 +128,16 @@ export default {
         this.removePoints(this.points.localesfravm)
       }
     },
-    localesdataira(val){
-      if(val && !this.loadedPoints.localesdataira){
+    localesdadasign(val){
+      if(val && !this.loadedPoints.localesdadasign){
         d3.csv("static/data/locales-dataira.csv").then(data=>{
-          this.loadedPoints.localesdataira = true;
-          this.points.localesdataira = data;
-          this.loadPoints(this.points.localesdataira)
+          this.loadedPoints.localesdadasign = true;
+          this.points.localesdadasign = data;
+          this.loadPoints(this.points.localesdadasign)
         });
       }else{
-        this.loadedPoints.localesdataira = false;
-        this.removePoints(this.points.localesdataira)
+        this.loadedPoints.localesdadasign = false;
+        this.removePoints(this.points.localesdadasign)
       }
     },
     educacioncmadrid(val){
@@ -230,9 +221,9 @@ export default {
       }
       .localesfravm-ayto i {background: #4b4c7a; }
       .localesfravm-noayto i {background: #c855bc; }
-      .localesdataira-codere i {background: #58dada; }
-      .localesdataira-sportium i {background: #7984ee; }
-      .localesdataira-luckia i {background: #a9d2ff; }
+      .localesdadasign-codere i {background: #58dada; }
+      .localesdadasign-sportium i {background: #7984ee; }
+      .localesdadasign-luckia i {background: #a9d2ff; }
       .educacioncmadrid i {background: #ffa258; }
     }
   }

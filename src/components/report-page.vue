@@ -48,8 +48,8 @@
 
         <!-- start intro -->
         <h3 ref="introduccion">Introducción</h3>
-        <p>El objeto del presente estudio es la distribución espacial de los establecimientos de juegos y apuestas existentes en la ciudad de Madrid, en la amplia acepción que recoge el artículo 1 de la Ley 6/2001, del juego en la Comunidad de Madrid: locales en los que se realizan «actividades en las que se arriesguen cantidades de dinero u objetos económicamente evaluables en cualquier forma sobre los resultados, y que permitan su transferencia entre los participantes, con independencia de que predomine en ellos el grado de destreza de los jugadores o sean exclusiva o primordialmente de suerte, envite o azar y tanto si se desarrollan mediante la utilización de máquinas automáticas como si se llevan a cabo a través de la realización de actividades humanas, cualquiera que sea el medio por el que se realicen».</p>
-        <p>Aquí entran los casinos, bingos, locales de juegos, salones de apuestas, establecimientos de juegos colectivos de dinero y azar… Se excluyen las administraciones de lotería, estancos, ONCE y, en general, los espacios de juegos de gestión pública o sometidos a autorización especial. También quedan fuera los bares, restaurantes y lugares con unas pocas máquinas tragaperras y similares. Solo se consideran los negocios estables, no se contabilizan las instalaciones temporales, efímeras…</p>
+        <p>El objeto del presente estudio es la distribución espacial de los establecimientos de juegos y apuestas existentes en la ciudad de Madrid, en la amplia acepción que recoge el artículo 1 de la <a href="http://www.madrid.org/wleg_pub/secure/normativas/contenidoNormativa.jsf?opcion=VerHtml&nmnorma=349&cdestado=P#no-back-button" target="_blank">Ley 6/2001, del juego en la Comunidad de Madrid</a>: locales en los que se realizan «actividades en las que se arriesguen cantidades de dinero u objetos económicamente evaluables en cualquier forma sobre los resultados, y que permitan su transferencia entre los participantes, con independencia de que predomine en ellos el grado de destreza de los jugadores o sean exclusiva o primordialmente de suerte, envite o azar y tanto si se desarrollan mediante la utilización de máquinas automáticas como si se llevan a cabo a través de la realización de actividades humanas, cualquiera que sea el medio por el que se realicen».</p>
+        <p>Aquí entran los casinos, bingos, locales de juegos, salones de apuestas, establecimientos de juegos colectivos de dinero y azar, etc. Se excluyen las administraciones de lotería, estancos, ONCE y, en general, los espacios de juegos de gestión pública o sometidos a autorización especial. También quedan fuera los bares, restaurantes y lugares con unas pocas máquinas tragaperras y similares. Solo se consideran los negocios estables, no se contabilizan las instalaciones temporales o efímeras.</p>
         <p>Para establecer el universo de estudio se ha partido del listado de establecimientos con el epígrafe 920002 en el Censo de Locales del Ayuntamiento de Madrid, que comprende los juegos de azar y apuestas de gestión privada. En el trabajo de campo se han visitado todas las direcciones a fin de verificar la actividad. Ello ha permitido depurar el listado eliminando los locales en los que la actividad no se corresponde con el epígrafe o en los que no hay actividad alguna (viviendas, solares…). En paralelo, en el trabajo de campo se ha peinado buena parte de la ciudad a fin de identificar aquellos establecimientos en los que se practican juegos de azar y/o apuestas pero que figuran con otro epígrafe en el Censo o incluso que no están (o no ha sido posible hallarlos) en él. Estas incorporaciones han sido fotografiadas y rastreadas en el Censo a fin de acotar la actividad dada de alta. En muchos casos, como se verá, se corresponden con los epígrafes 920001 (juegos de azar y apuestas de gestión pública) o 932007 (salones de recreo, diversión y otras actividades recreativas).</p>
         <p>El trabajo de campo se ha realizado en poco tiempo y gracias a la aportación voluntaria de muchas personas en los 21 distritos, bajo la supervisión de la FRAVM. Esto nos asegura que el universo sobre el que se trabaja aquí es aproximado al real o, dicho de otra manera, todos los establecimientos incluidos son salones de apuestas-locales de juego, pero seguramente han quedado establecimientos sin identificar. Cabe confiar que el número de éstos no sea grande. En cualquier caso, esta circunstancia obliga a aplicar la cautela en el examen de los datos.</p>
         <!-- end intro -->
@@ -400,7 +400,7 @@
         <p>Dando un paso más allá, cabe interrogarse por las características socioeconómicas y demográficas de los barrios en que se ubican. Entre la sección censal, demasiado pequeña, y el distrito, demasiado grande, la unidad geográfica intermedia es el barrio. Sería bueno trabajar con barrios naturales, pero, al no existir información estadística para ellos, hay que conformarse con los barrios administrativos.</p>
         <p>Pues bien, tenemos que los barrios en los que se localizan las casas de juego, preferentemente, se hallan dentro de la margen occidental de la almendra central y en los barrios periféricos del sur próximos a la M-30. En posiciones periféricas hay pocos locales. En general, son barrios de tamaño medio y grande, medidos por el número de habitantes, y con ratios de densidad poblacional elevados. Parece, así pues, que los establecimientos buscan la proximidad de un tejido urbano muy consolidado, con actividad, saturado.</p>
         <p>Por otra parte, en general, son barrios con niveles de renta neta de las familias inferiores a la media municipal o en torno a ella. Dada la asociación obvia entre el nivel de renta y el nivel de estudios de la población, son barrios en los que el peso de los mayores de 25 años sin estudios o con estudios acabados de bajo nivel es elevado. Lo mismo ocurre a propósito de la relación entre la distribución de los locales y la tasa de paro. Hay que llamar la atención sobre la significativa asociación existente entre el peso de la población inmigrante y la distribución espacial de las casas de juego.</p>
-        <p>En fin, son barrios con precios de las viviendas -euros por metro cuadrado- más económicos que en el resto de la ciudad, con la excepción de los más céntricos (distritos de Centro, Chamberí y, en parte, Tetuán).</p>
+        <p>Son barrios con precios de las viviendas -euros por metro cuadrado- más económicos que en el resto de la ciudad, con la excepción de los más céntricos (distritos de Centro, Chamberí y, en parte, Tetuán).</p>
         <p>De tal modo, parece que los locales buscan zonas en las que la localización sea más barata y, al tiempo, zonas en las que la población residente tiene un nivel adquisitivo inferior a la media y un estatus social menos privilegiado, si bien por encima de los barrios más vulnerables.</p>
         <p>Surge la pregunta: la elección de estos barrios, ¿Ocurre porque los costes de instalación -alquileres y precios de venta de los inmuebles- son más asequibles o porque se trata de estar cerca de la clientela actual y potencial? O, más bien, ¿Inciden sendas dimensiones?</p>
         <p>Con la información empírica disponible no es fácil contestar. En realidad, los barrios con dotaciones amplias de establecimientos son minoría:  el 70% de los locales están en el 30% de los barrios. Hoy por hoy, es una dotación con una cobertura territorial limitada. No son negocios de proximidad en sentido estricto. La lógica de implantación no es la de, por así decirlo, una tienda de barrio.</p>
@@ -418,7 +418,7 @@
           </div>
         </div>
 
-        <p>TABLA</p>
+        <table-regression/>
         <!-- end recopilacion -->
 
         <!-- start othercities -->
@@ -499,7 +499,7 @@
           </div>
         </div>
 
-        <p>TABLA</p>
+        <table-locals-by-educationcenters/>
 
         <p>A continuación se incluyen tres mapas del mayor interés. El primero arroja una vista panorámica de la confluencia de los locales y los colegios. Es muy significativo el contraste entre la amplia cobertura territorial de los centros educativos y la concentración de los locales y salones. La superposición de radios entre sendas redes se produce en el ámbito de éstos. En el segundo mapa  se recoge, a modo de ejemplo, un colegio que tiene en su entorno inmediato tres establecimientos. Nótese cómo dos de ellos están a bastante menos de 100 metros. En el tercero mapa, por último, se concretan los colegios en cuyo radio de 100 metros a la redonda hay uno o más establecimientos. Centro, Puente de Vallecas y Latina son los tres distritos con más colegios afectados.</p>
 
@@ -532,6 +532,7 @@
 export default {
   name: 'report-page',
   created: function(){
+    window.scrollTo(0,0);
   },
   methods: {
     scrollTo(refName) {
