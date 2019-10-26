@@ -3,7 +3,7 @@
     <div class="page__wrap">
 
       <section class="page__section page__section--head">
-        <h1 class="page__title">Fuentes de datos y metodologías empleadas</h1>
+        <h1 class="page__title">Metodologías y fuentes de datos</h1>
       </section>
 
       <section class="page__section page__section--contents">

@@ -14,6 +14,7 @@ Vue.component('contact-page',                     require('./contact-page').defa
 Vue.component('table-locals-by-distric-company',  require('./sections/table-locals-by-distric-company').default);
 Vue.component('table-streets-by-number',          require('./sections/table-streets-by-number').default);
 Vue.component('table-locals-by-educationcenters', require('./sections/table-locals-by-educationcenters').default);
+Vue.component('table-neighborhoods-by-locals',    require('./sections/table-neighborhoods-by-locals').default);
 Vue.component('table-regression',                 require('./sections/table-regression').default);
 
 Vue.component('locals-by-distric',                require('./sections/locals-by-distric').default);
