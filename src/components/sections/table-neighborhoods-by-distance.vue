@@ -10,7 +10,7 @@
           <td class="cen">1 local</td>
           <td class="cen">2-3 locales</td>
           <td class="cen">3-6 locales</td>
-          <td class="cen">7y+ locales</td>
+          <td class="cen">7+ locales</td>
           <td class="cen">Total</td>
         </tr>
       </thead>
@@ -42,7 +42,7 @@
           <td class="cen">1 local</td>
           <td class="cen">2-3 locales</td>
           <td class="cen">3-6 locales</td>
-          <td class="cen">7y+ locales</td>
+          <td class="cen">7+ locales</td>
         </tr>
       </thead>
       <tbody>
