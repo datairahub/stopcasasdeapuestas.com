@@ -66,10 +66,6 @@ class D3LineChart{
         this.cfg.width = parseInt(this.selection.node().offsetWidth) - this.cfg.margin.left - this.cfg.margin.right;
         this.cfg.height = parseInt(this.selection.node().offsetHeight)- this.cfg.margin.top - this.cfg.margin.bottom;
 
-        // Set up scales domain
-        this.xScale = d3.scaleTime().rangeRound([0, this.cfg.width]);
-        this.yScale = d3.scaleLinear().rangeRound([this.cfg.height, 0]);
-
         // Set up color scheme
         if(this.cfg.colorScheme instanceof Array === true){
             this.colorScale = d3.scaleOrdinal().range(this.cfg.colorScheme)

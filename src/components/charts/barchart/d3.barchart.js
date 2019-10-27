@@ -24,8 +24,8 @@ class D3BarChart{
             labelRotation: 0,
             color: 'steelblue',
             yAxis: '',
-            yscaleticks: 5,
-            yscaleformat: '.0f',
+            yScaleTicks: 5,
+            yScaleFormat: '.0f',
         };
 
         // Set up configuration
@@ -82,7 +82,7 @@ class D3BarChart{
             .call(
                 this.make_y_gridlines()
                     .tickSize(-this.cfg.width)
-                    .ticks(this.cfg.yscaleticks, this.cfg.yscaleformat)
+                    .ticks(this.cfg.yScaleTicks, this.cfg.yScaleFormat)
                 )
 
         // Vertical axis title
@@ -170,7 +170,7 @@ class D3BarChart{
             .call(
                 this.make_y_gridlines()
                     .tickSize(-this.cfg.width)
-                    .ticks(this.cfg.yscaleticks, this.cfg.yscaleformat)
+                    .ticks(this.cfg.yScaleTicks, this.cfg.yScaleFormat)
             );
         
         // Bottom axis

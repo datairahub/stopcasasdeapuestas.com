@@ -42,8 +42,8 @@ configuration = {
   labelRotation: 0,
   color: 'steelblue',
   yAxis: '',
-  yscaleticks: 5,
-  yscaleformat: '.0f',
+  yScaleTicks: 5,
+  yScaleFormat: '.0f',
 }
 ```
 
@@ -53,8 +53,8 @@ configuration = {
 - **labelRotation**: (number). Angle (in degs) to rotate labels. Use it if labels are too long.
 - **color**: (string). Color to apply to bars.
 - **yAxis**: (string). Vertical axis text.
-- **yscaleticks**: (number). Horizontal axis divisions.
-- **yscaleformat**: (string). Vertical axis number format. [See more info](https://github.com/d3/d3-format).
+- **yScaleTicks**: (number). Vertical axis divisions (horizonal grid lines).
+- **yScaleFormat**: (string). Vertical axis number format. [See more info](https://github.com/d3/d3-format).
 
 > Chart's width & height is automatically calculated based on component's available space
 
