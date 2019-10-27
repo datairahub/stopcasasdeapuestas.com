@@ -37,7 +37,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <td colspan='999999'>Fuente: Elaboración propia. <sup>1</sup>Locales cerrados o que no lo son.</td>
+            <td colspan='999999'>Fuente: Censo de Locales del Ayto. de Madrid y FRAVM. <sup>1</sup>Locales cerrados o que no lo son.</td>
         </tr>
     </tfoot>
   </table>

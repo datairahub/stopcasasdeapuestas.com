@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'locals-by-distric',
+    name: 'chart-locals-by-distric',
     data: function(){
         return {
             datum: [
@@ -41,7 +41,7 @@ export default {
                 }
             },
             title: 'Locales por distrito',
-            source: 'Fuente: Datos abiertos (A. Madrid) y elaboración propia',
+            source: 'Fuente: Datos abiertos (A. Madrid) y FRAVM.',
         }
     }
 }

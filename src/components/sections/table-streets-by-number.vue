@@ -12,7 +12,7 @@
     </tbody>
     <tfoot>
       <tr>
-        <td>Fuente: Datos abiertos y elaboración propia</td>
+        <td>Fuente: Datos abiertos y FRAVM.</td>
       </tr>
     </tfoot>
   </table>

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'locals-by-rent',
+    name: 'chart-locals-by-rent',
     data: function(){
         return {
             datum: [
@@ -36,7 +36,7 @@ export default {
                 yAxis: 'Renta media',
             },
             title: 'Promedio no ponderado de la renta media de los hogares según el nº de locales',
-            source: 'Fuente: Elaboración propia',
+            source: 'Fuente: FRAVM',
         }
     }
 }

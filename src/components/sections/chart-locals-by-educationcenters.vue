@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'locals-by-educationcenters',
+    name: 'chart-locals-by-educationcenters',
     data: function(){
         return {
             datum: [
@@ -30,7 +30,7 @@ export default {
                 yAxis: 'Nº de locales',
             },
             title: 'Locales con algún centro de secundaria a menos de...',
-            source: 'Fuente: Elaboración propia',
+            source: 'Fuente: FRAVM',
         }
     }
 }

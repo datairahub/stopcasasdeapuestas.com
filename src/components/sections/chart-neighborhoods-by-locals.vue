@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'neighborhoods-by-locals',
+    name: 'chart-neighborhoods-by-locals',
     data: function(){
         return {
             datum: [
@@ -35,7 +35,7 @@ export default {
                 }
             },
             title: 'Número de barrios por cantidad de locales',
-            source: 'Fuente: Elaboración propia.',
+            source: 'Fuente: FRAVM.',
         }
     }
 }
