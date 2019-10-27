@@ -52,7 +52,9 @@
         max-width: 740px;
         margin: 0 auto;
         overflow: visible;
-        padding-top: 40px;
+        &:first-child{
+          padding-top: 40px;
+        }
         &--big {
           max-width: 1200px;
           padding-top: 0;
@@ -136,6 +138,9 @@
               }
               &.cen {
                 text-align: center;
+              }
+              &.strong {
+                font-weight: 700;
               }
             }
             thead {

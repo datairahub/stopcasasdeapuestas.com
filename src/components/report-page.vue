@@ -419,7 +419,17 @@
         <p>Así, encontramos muchos barrios con un perfil socioeconómico y demográfico parecido al de los barrios con muchos locales que, sin embargo, carecen de ellos o que a lo sumo alojan 1-2. De ahí que los análisis de contingencia, así como los diagramas de dispersión, que se han realizado arriba muestran relaciones bivariadas significativas, pero con coeficientes que miden la relación de dependencia moderados o incluso débiles. Significativamente no se ha encontrado relación alguna entre la dotación de locales por barrios y los precios, a la vez que la relación con la estructura de edades es muy leve.</p>
         <p>Abundando sobre la cuestión, en las páginas que siguen se aborda un análisis de regresión múltiple. La variable dependiente es el número de locales por barrios y las variables explicativas son los indicadores que se han estudiado. Las correlaciones de Pearson de las diferentes variables con la dependiente son, en general, bajas o insignificantes. Mejoran algo si se toman las correlaciones parciales, esto es, si sobre cada asociación bivariada se introduce una variable de control. Ambas correlaciones se recogen en la siguiente tabla: en la segunda columna están las correlaciones de número de locales con las demás variables y en las columnas restantes están las parciales de número de locales con las demás controlando por la variable que aparece en cabecera. Las primeras se leen en vertical y las segundas en horizontal. La estimación de relaciones curvilíneas (logarítmicas, cúbicas, cuadradas, inversas, logísticas…) no ofrece mejores resultados.</p>
 
-        <p>TABLA</p>
+      </section>
+    </div>
+
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
+        <table-correlations/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
 
         <p>Después de ensayar diversos modelos de regresión, uno de los que mejores resultados arrojan es el que liga a la raíz cuadrada del número de locales con las variables densidad, % de inmigrantes y población. Los modelos alternativos examinados, por unas u otras razones, incumplen los criterios del análisis de mínimos cuadrados<sup>5</sup>. La correlación múltiple es alta (0,721), lo que significa que el 52% de la varianza está explicada. Las variables renta, distancia y precios no aparecen, cuando sí lo hacen en los análisis de contingencia y en las correlaciones bivariadas. Sucede que su influencia es canalizada por las tres variables introducidas en el modelo, con las que están correlacionadas.</p>
 
