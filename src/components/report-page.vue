@@ -594,8 +594,17 @@
             <sup>5</sup> El escogido cumple el criterio de normalidad de los residuos (Jarque-Bera = 4,93, con p = 0,085), el de no heterocedasticidad (contraste de heterocedasticidad de White = 13,49, inferior al valor crítico de 16,92) y el de no colinealidad (los factores de inflación de la varianza de las tres variables son muy inferiores a 10). A su vez, el modelo está bien especificado, según el contraste de Ramsey (F = 1,57 y p = 0,212, superior, pues, a 0.05). Todos los coeficientes son significativos individualmente (valores de t) y en conjunto (valor de F). 
           </div>
         </div>
+      </section>
+    </div>
 
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
         <table-regression/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
         <!-- end recopilacion -->
 
         <!-- start othercities -->

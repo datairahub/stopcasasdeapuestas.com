@@ -43,6 +43,7 @@
             max-height: calc(100vh - 40px);
             overflow-y: scroll;
             max-width: 800px;
+            text-align: center;
         }
         .page__map {
             flex: 1 1 50%;
@@ -96,6 +97,7 @@
           display: flex;
           flex-wrap: wrap;
           .page__wrap {
+            text-align: center !important;
             font-size: smaller;
             text-align: center;
             flex: 1 1 50%;
@@ -188,6 +190,11 @@
 
 @media screen and (min-width: 740px) {
   .page {
+    &--wide {
+        .page__wrap {
+            text-align: left;
+        }
+    }
     &__wrap {
       &--big {
         overflow-x: auto;
@@ -195,6 +202,8 @@
     }
   }
 }
+
+
 
 
 @media screen and (min-width: 1020px) {
