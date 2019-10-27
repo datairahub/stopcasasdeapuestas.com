@@ -34,6 +34,7 @@
     &--home {
         overflow: auto;
         min-height: 100vh;
+        text-align: center;
     }
     &--wide {
         display: flex;
@@ -43,7 +44,6 @@
             max-height: calc(100vh - 40px);
             overflow-y: scroll;
             max-width: 800px;
-            text-align: center;
         }
         .page__map {
             flex: 1 1 50%;
