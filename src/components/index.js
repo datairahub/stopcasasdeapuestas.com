@@ -37,6 +37,14 @@ Vue.component('chart-neighborhoods-by-education-locals',          require('./sec
 Vue.component('chart-neighborhoods-by-education-locals-line',     require('./sections/chart-neighborhoods-by-education-locals-line').default);
 Vue.component('chart-neighborhoods-by-distance-locals',           require('./sections/chart-neighborhoods-by-distance-locals').default);
 Vue.component('chart-neighborhoods-by-distance-locals-line',      require('./sections/chart-neighborhoods-by-distance-locals-line').default);
+Vue.component('chart-neighborhoods-by-population-locals',         require('./sections/chart-neighborhoods-by-population-locals').default);
+Vue.component('chart-neighborhoods-by-population-locals-line',    require('./sections/chart-neighborhoods-by-population-locals-line').default);
+Vue.component('chart-neighborhoods-by-density-locals',            require('./sections/chart-neighborhoods-by-density-locals').default);
+Vue.component('chart-neighborhoods-by-density-locals-line',       require('./sections/chart-neighborhoods-by-density-locals-line').default);
+Vue.component('chart-neighborhoods-by-youngs-locals',             require('./sections/chart-neighborhoods-by-youngs-locals').default);
+Vue.component('chart-neighborhoods-by-youngs-locals-line',        require('./sections/chart-neighborhoods-by-youngs-locals-line').default);
+Vue.component('chart-neighborhoods-by-senility-locals',           require('./sections/chart-neighborhoods-by-senility-locals').default);
+Vue.component('chart-neighborhoods-by-senility-locals-line',      require('./sections/chart-neighborhoods-by-senility-locals-line').default);
 Vue.component('chart-locals-by-educationcenters',                 require('./sections/chart-locals-by-educationcenters').default);
 
 

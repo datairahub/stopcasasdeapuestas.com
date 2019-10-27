@@ -330,11 +330,11 @@
 
         <p>MAPA</p>
 
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-population-locals/>
 
         <p>BOXPLOT</p>
 
-        <p>FEVER</p>
+        <chart-neighborhoods-by-population-locals-line/>
         
         <h4 ref="densidad">Densidad</h4>
 
@@ -344,11 +344,11 @@
 
         <p>MAPA</p>
 
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-density-locals/>
 
         <p>BOXPLOT</p>
 
-        <p>FEVER</p>
+        <chart-neighborhoods-by-density-locals-line/>
 
         <h4 ref="jovenes">Proporción de jóvenes</h4>
 
@@ -358,11 +358,11 @@
 
         <p>MAPA</p>
 
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-youngs-locals/>
 
         <p>BOXPLOT</p>
 
-        <p>FEVER</p>
+        <chart-neighborhoods-by-youngs-locals-line/>
 
         <h4 ref="senilidad">Tasa de senilidad</h4>
 
@@ -372,11 +372,11 @@
 
         <p>MAPA</p>
 
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-senility-locals/>
 
         <p>BOXPLOT</p>
 
-        <p>FEVER</p>
+        <chart-neighborhoods-by-senility-locals-line/>
 
         <h4 ref="extranjeros">Tasa de extranjería</h4>
 

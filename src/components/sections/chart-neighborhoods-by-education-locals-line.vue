@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'chart-neighborhoods-by-unemployment-locals-line',
+    name: 'chart-neighborhoods-by-education-locals-line',
     data: function(){
         return {
             datum: [
