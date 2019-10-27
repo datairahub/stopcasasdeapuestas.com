@@ -139,7 +139,7 @@
 
         <chart-neighborhoods-by-locals/>
 
-        <p>MAPA</p>
+        <map-neighborhoods-by-locals/>
 
         <p>Siguiendo con el último mapa, por otra parte, se aprecia que no se producen grandes manchas de color, esto es, los barrios con muchos-pocos locales están rodeados por otros barrios con muchos-pocos locales pero sin definir una pauta. De ahí la apariencia de tablero de ajedrez. Esta situación queda bien reflejada por el llamado índice de autocorrelación espacial de Moran, que mide en qué grado un barrio es parecido a los barrios vecinos: arroja un valor muy bajo (0,11, sobre un máximo posible de 1).</p>
 

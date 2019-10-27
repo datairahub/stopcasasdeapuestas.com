@@ -8,10 +8,10 @@
 
 
 <script>
-import D3BarChart from './d3.barchart';
+import D3GeoJsonMap from './d3.geojsonmap';
 
 export default {
-    name: 'bar-chart',
+    name: 'geojson-map',
     data: function(){
         return {
             chart: {},
@@ -35,7 +35,7 @@ export default {
         }
     },
     mounted: function(){
-        this.chart = new D3BarChart(
+        this.chart = new D3GeoJsonMap(
             this.$refs.chart,
             this.datum,
             this.config
