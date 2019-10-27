@@ -1,9 +1,15 @@
 import {select, selectAll} from 'd3-selection';
+import {scaleSequential} from 'd3-scale'
+import {extent} from 'd3-array'
 import {geoPath, geoMercator} from 'd3-geo'
+import {interpolateBlues, interpolateGreens, interpolateGreys} from 'd3-scale-chromatic'
 
 const d3 = {
     select, selectAll,
+    scaleSequential,
+    extent,
     geoPath, geoMercator,
+    interpolateBlues, interpolateGreens, interpolateGreys
 }
 
 class D3GeoJsonMap{
@@ -18,7 +24,10 @@ class D3GeoJsonMap{
             projection: 'geoMercator', // More in https://github.com/d3/d3-geo
             scale: 1000,
             center: [0,0],
+            key: false,
             label: false,
+            color: 'steelblue',
+            colorScheme: 'interpolateBlues',
         };
 
         // Set up configuration
@@ -33,6 +42,18 @@ class D3GeoJsonMap{
         // Set up dimensions
         this.cfg.width = parseInt(this.selection.node().offsetWidth) - this.cfg.margin.left - this.cfg.margin.right;
         this.cfg.height = parseInt(this.selection.node().offsetHeight)- this.cfg.margin.top - this.cfg.margin.bottom;
+
+        // Set up color scheme
+        if(this.cfg.colorScheme instanceof Array === true){
+        }else{
+            this.colorScale = d3.scaleSequential(d3[this.cfg.colorScheme])
+                .domain([0,20]);
+        }
+        if(this.colorScale){
+            this.colorScale.domain(
+                d3.extent(this.data.features.map(d=>d.properties[this.cfg.key]))
+            )
+        }
 
         this.projection = d3[this.cfg.projection]()
 
@@ -79,12 +100,15 @@ class D3GeoJsonMap{
         this.features = this.g.selectAll("path")
             .data(this.data.features)
             .enter().append("path")
+            .attr('fill', d => this.pathColor(d))
             .attr("d", this.path)
             .on("mouseover",d => {
+                let label = this.cfg.label && d.properties[this.cfg.label] ? d.properties[this.cfg.label] : '';
+                let value = this.cfg.key && d.properties[this.cfg.key] ? d.properties[this.cfg.key] : '';
+                if(label||value)
                 this.tooltip.html(() => {
-                    let label = this.cfg.label && d.properties[this.cfg.label]? d.properties[this.cfg.label] : '';
                     return `
-                        <div>${label}</div>
+                        <div>${label}: ${value}</div>
                     `
                 })
                 .classed('active', true);
@@ -123,6 +147,15 @@ class D3GeoJsonMap{
         this.features
             .attr("d", this.path)
 
+    }
+
+    // Compute path color
+    pathColor(d){
+        if(this.cfg.key && this.colorScale){
+            return this.colorScale(d.properties[this.cfg.key])
+        }else{
+            return this.cfg.color;
+        }
     }
 }
 

@@ -110,7 +110,9 @@
         
         <p>En los dos mapas que siguen se representan por distritos y barrios:</p>
 
-        <p>MAPAS</p>
+        <map-districts-by-locals/>
+
+        <p>MAPA</p>
 
         <p>Una rápida inspección de los mapas muestra una pauta de acusada concentración de los locales en los distritos/barrios de la margen occidental de la almendra central y en la periferia sur próxima a la M-30.</p>
         <p>En concreto, la distribución por distritos permite a simple vista diferenciar cuatro grandes grupos. Carabanchel, Puente de Vallecas, Tetuán, Centro, Usera, Latina y Ciudad Lineal absorben el 61% de los establecimientos. Arganzuela, Chamberí y Villaverde aparecen algo despegados de los anteriores, en una segunda posición. San Blas-Canillejas, Salamanca, Chamartín y Fuencarral-El Pardo se distancian en la tercera posición del ranking. Cierran, con pocos locales de juego, siete distritos, entre ellos los más periféricos (Villa de Vallecas, Vicálvaro y Barajas), más uno céntrico (Retiro) y dos intermedios (Hortaleza y Moncloa-Aravaca), junto a Moratalaz.</p>
@@ -139,11 +141,15 @@
 
         <chart-neighborhoods-by-locals/>
 
-        <map-neighborhoods-by-locals/>
+        <!-- <map-neighborhoods-by-locals/> -->
+        <p>MAPA</p>
 
         <p>Siguiendo con el último mapa, por otra parte, se aprecia que no se producen grandes manchas de color, esto es, los barrios con muchos-pocos locales están rodeados por otros barrios con muchos-pocos locales pero sin definir una pauta. De ahí la apariencia de tablero de ajedrez. Esta situación queda bien reflejada por el llamado índice de autocorrelación espacial de Moran, que mide en qué grado un barrio es parecido a los barrios vecinos: arroja un valor muy bajo (0,11, sobre un máximo posible de 1).</p>
 
-        <p>SCATTERPLOT</p>
+        <figure>
+          <img src="/static/img/charts/autocorrelacionmoran.png" alt="Índice de autocorrelación espacial de Moran">
+          <figcaption>Índice de autocorrelación espacial de Moran. FRAVM.</figcaption>
+        </figure>
 
         <p>Siguiendo el método de los cortes naturales de Jenks<sup>3</sup>, los 131 barrios administrativos de la ciudad se han agrupado en seis tipos según el número de establecimientos. Los dos primeros cogen los barrios con valores por debajo de la media, esto es, sin locales o con muy pocos. El tercero representa aquellos que arrojan valores en el entorno de la media. En el cuarto están los que localizan más locales que la media, pero sin apartarse de manera muy significativa de ella. El quinto y el sexto tipos identifican los barrios que concentran más de la mitad del total de establecimientos abiertos en la ciudad. En particular, el último reúne, por así decirlo, los lugares con valores atípicos estadísticamente: 20 y 21 locales.</p>
 
@@ -153,7 +159,10 @@
           </div>
         </div>
 
-        <p>MAPA</p>
+        <figure>
+          <img src="/static/img/charts/barriosjenks.jpg" alt="Barrios según número de locales">
+          <figcaption>Barrios según número de locales. FRAVM.</figcaption>
+        </figure>
 
         <p>Atendiendo a los dos últimos tipos, vemos que destacan claramente siete ámbitos espaciales como los grandes referentes del juego en la ciudad. En las páginas que siguen se hace un zoom sobre cada uno de ellos<sup>4</sup>.</p>
 
@@ -256,17 +265,33 @@
 
         <p>Sin duda, una de las primeras a estudiar es la renta neta media de los hogares. En la tabla que sigue se cruza el número de barrios según la renta y según el número de locales. La distribución de la renta está agrupada en cinco intervalos, de los cuales, en el tercero está la media simple de los barrios. Existe una asociación moderada entre ambas variables, pues se obtiene un valor alto del chi cuadrado (38,2, con una probabilidad muy baja de obtener un valor más alto, p = 0.005). A su vez, el coeficiente de contingencia, que mide la fuerza de la relación, es 0.46, sobre un coeficiente máximo posible de 0.89. La gran mayoría de los barrios que se hallan por encima de la renta media municipal o no tienen casas de juego o a lo sumo localizan 1 o 2. En cambio, la mayoría de los barrios que están por debajo de la media municipal tienen 3 o más. Más de la mitad de los barrios con 3 o más establecimientos se clasifican en los dos intervalos más bajos de la escala de rentas. En la segunda tabla se recogen los residuos tipificados corregidos de Haberman. Para un nivel de confianza de 0,95, se puede decir que los residuos mayores de 1,96 señalan los cruces de variables con más casos observados que los esperados si aquéllas fueran independientes o no estuvieran asociadas en una relación de dependencia y los residuos negativos mayores en valor absoluto de –1,96 apuntan los cruces con menos casos observados que los esperados. Para niveles de confianza inferiores sendos valores serían menores en valor absoluto (por ejemplo, para un nivel de confianza del 0,9, serían +/- 1,64). La interpretación de los residuos confirma de manera palmaria la asociación entre las variables y subraya el fuerte protagonismo en la distribución de las casas de juego de la polaridad barrios con rentas bajas y medio bajas y barrios con rentas medias altas y muy altas.</p>
 
+      </section>
+    </div>
+
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
         <table-neighborhoods-by-locals/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
 
         <p>En el siguiente mapa se recoge la distribución de los barrios según la renta neta media en 2015. La información incide en los resultados que se han subrayado arriba. Se observa que la mayoría de los barrios con números altos de locales, a su vez, son barrios con rentas netas por hogar residente bajas o medio bajas. Las excepciones se producen en Trafalgar y Argüelles, en el distrito de Chamberí, y Castillejos, en el de Tetuán. En general, en los barrios con rentas medias altas o no hay locales o hay muy pocos. No obstante, entre ambas variables la correlación es débil, aunque significativa. La correlación de Pearson es -0.39, sobre un máximo de -1, esto es, a mayor renta menor frecuencia de locales. Ahora bien, igualmente es cierto que muchos barrios con rentas bajas alojan pocos locales o ninguno, tal como se ve en el gráfico de dispersión adjunto. El valor absoluto del coeficiente aumenta algo si nos deshacemos de los barrios más periféricos, acotando el mapa a la almendra central y a la órbita de barrios perimetrales o próximos a la M-30.</p>
 
-        <p>MAPA</p>
+        <figure>
+          <img src="/static/img/charts/mapa-renta.jpg" alt="Barrios según renta">
+          <figcaption>Barrios según renta. FRAVM.</figcaption>
+        </figure>
         
         <chart-neighborhoods-by-rent-locals/>
 
         <p>El diagrama de cajas ilustra perfectamente la situación. En él se agrupan los barrios en cinco niveles de renta (de menos a más) y para cada uno se cuenta con la distribución del número de locales, señalando el valor máximo, mínimo, la mediana y los percentiles 25 y 75. A mayor amplitud de la caja, mayor dispersión de la variable. El máximo y la mediana son elevados en los estratos bajos de renta y desciende muy significativamente al pasar de uno al siguiente. Nótese la desemejanza extrema entre el primer y el quinto estrato.</p>
 
-        <p>BOXPLOT</p>
+        <figure>
+          <img src="/static/img/charts/boxplot-renta.png" alt="Barrios según renta" style="width:300px; height: auto;">
+          <figcaption>Barrios según renta. FRAVM.</figcaption>
+        </figure>
 
         <p>En el gráfico siguiente se representa el promedio no ponderado de los ingresos medios de los hogares de los barrios clasificados según el número de locales de juego. El sentido descendente de la curva es palmario.</p>
 
@@ -275,16 +300,32 @@
         <h4 ref="paro">Tasa absoluta de paro</h4>
 
         <p>Otra variable a considerar es la tasa de desempleo por barrios: número de personas desempleadas/población activa de 16 y más años. No se cuenta con ese dato, sino con uno aproximado: la tasa absoluta de paro. Por ella se entiende la proporción de paro registrado de cada barrio sobre el total de la población (activa más inactiva) de 16 y más años. Se aprecia una asociación moderada entre la tasa y el número de locales: chi cuadrado igual a 36,8, con p = 0.002, y coeficiente de contingencia igual a 0,48 sobre un máximo de 0,89. Se cumple que los barrios con menor intensidad del desempleo tienen pocas casas de juego, mientras que éstas se concentran en los barrios con tasas altas y medias.</p>
-        
+
+      </section>
+    </div>
+
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
         <table-neighborhoods-by-unemployment/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
 
         <p>Las tasas de paro más altas se producen en los barrios del sur y este de la ciudad, donde también se localizan más locales de juego. La correlación no es alta, sin embargo, como se observa en el diagrama de dispersión. En éste no se delinea una curva bien definida, sino que la nube de puntos es amorfa. La curva de promedios no ponderados de la tasa de paro muestra un ascenso según aumenta el número de locales hasta 8. Ahí baja, para luego volver a subir. Muchos barrios con tasas medias tienen bastantes establecimientos. La misma información se observa en el diagrama de cajas.</p>
         
-        <p>MAPA</p>
+        <figure>
+          <img src="/static/img/charts/mapa-paro.jpg" alt="Barrios según tasa de desempleo">
+          <figcaption>Barrios según tasa de desempleo. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-unemployment-locals/>
 
-        <p>BOXPLOT</p>
+        <figure>
+          <img src="/static/img/charts/boxplot-paro.png" alt="Barrios según tasa de desempleo" style="width:300px; height: auto;">
+          <figcaption>Barrios según tasa de desempleo. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-unemployment-locals-line/>
         
@@ -292,15 +333,31 @@
 
         <p>Una variable con acusado poder de discriminación del estatus social de los barrios es el nivel de estudios acabados de la población residente. La web municipal ofrece ese dato referido a la población de 25 y más años. A partir de él se ha elaborado para cada barrio el índice de proporción de población de 25 y más años analfabeta, sin estudios o solo con estudios primarios. La tabla de contingencia que sigue muestra una leve relación entre ambas variables, pues el chi cuadrado asciende a 31,1, que es significativo para un valor p = 0.05. El coeficiente de contingencia sube a 0,44, sobre un máximo de 0,89. Se observa que en los barrios en los que la población tiene un nivel educativo elevado hay pocos locales y, al revés, en los barrios con proporciones superiores a la media municipal de habitantes con bajo nivel de estudios hay muchos locales.</p>
 
+      </section>
+    </div>
+
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
         <table-neighborhoods-by-studies/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
 
         <p>Pero, como ocurre a propósito de las variables ya analizadas, el grado de la asociación no es fuerte en tanto que también hay muchos barrios con bajo nivel de estudios y pocos locales y al revés, barrios con nivel medio o alto y muchos locales. La asociación «bajo nivel-muchos locales» es clara a propósito de Latina, Carabanchel, Usera y Puente de Vallecas, no así a propósito de Centro, Chamberí y Tetuán. A su vez, la asociación «alto nivel-pocos locales» es cierta para Salamanca, Chamartín, Moncloa y barrios periféricos de Hortaleza y Fuencarral, no así para Villaverde, Villa de Vallecas, Casco Histórico de Vicálvaro o el Gran San Blas. Se repiten aquí grosso modo los resultados que destacamos respecto de las variables renta media y tasa absoluta de paro. A mayor abundamiento, en el último gráfico que se inserta a continuación se aprecia cómo, en particular, son los barrios con 9-10 y 20 locales los que más rompen la linealidad de la relación, a saber, entre otros, Sol, Palos de Moguer, Castillejos, Quintana, Gaztambide, Cuatro Caminos… Todos ellos, barrios céntricos con niveles educativos en la media o por encima de la media, pero con muchos locales. </p>
-        
-        <p>MAPA</p>
+
+        <figure>
+          <img src="/static/img/charts/mapa-estudios.jpg" alt="Barrios según nivel de estudios bajos">
+          <figcaption>Barrios según nivel de estudios bajos. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-education-locals/>
 
-        <p>BOXPLOT</p>
+        <figure>
+          <img src="/static/img/charts/boxplot-estudios.png" alt="Barrios según nivel de estudios bajos" style="width:300px; height: auto;">
+          <figcaption>Barrios según nivel de estudios bajos. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-education-locals-line/>
         
@@ -308,15 +365,31 @@
 
         <p>Las relaciones que se han analizado hasta aquí sugieren la influencia de una cuarta variable: la menor-mayor centralidad de los barrios. Para estudiarla se ha medido la distancia de cada barrio a la Puerta del Sol: en concreto, se ha medido la distancia en línea recta de ésta a los centroides de cada barrio, según los determina QGIS. En el siguiente mapa se han clasificado los barrios en cinco coronas según la distancia al centro y sobre ellos se impresionan las casas de juego según su localización. Se observa que la mayoría caen dentro de la primera y la segunda corona, es decir, en los barrios más céntricos. Aún hay un número significativo en la tercera, En la cuarta y quinta, en cambio, hay muy pocos. Buena parte de los establecimientos están dentro de un radio de 6 Km alrededor de la Puerta del Sol. Supóngase que el origen de coordenadas cartesianas se coloca en la plaza de Colón. La mayoría de las casas caen al sur (eje de Carranza-Sagasta-Goya) y al oeste (eje de La Castellana-paseo de Recoletos-El Prado).</p>
 
-        <p>MAPA</p>
+        <figure>
+          <img src="/static/img/charts/mapa-distancia.jpg" alt="Barrios según distancia a la Puerta del Sol">
+          <figcaption>Barrios según distancia a la Puerta del Sol. FRAVM.</figcaption>
+        </figure>
 
         <p>El análisis de contingencia repite los resultados hasta ahora obtenidos: la relación de dependencia (distancia-locales) no es significativa, (chi cuadrado = 23.5, con p = 0.102), el coeficiente de contingencia es moderado (0,39 sobre un máximo de 0,89, pero con una p demasiado alta). Sucede que, si bien la mayoría de los locales se localizan en las dos primeras coronas, en ellas, asimismo, están muchos barrios sin o con muy pocos locales. Aquí la polarización sur-norte, en relación a Sol, es muy importante. En el diagrama de cajas se observa cómo la mayor dispersión se produce en la segunda y tercera coronas, en las que se localizan preferentemente los barrios con 5 y más locales.</p>
 
+      </section>
+    </div>
+
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
         <table-neighborhoods-by-distance/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
 
         <chart-neighborhoods-by-distance-locals/>
 
-        <p>BOXPLOT</p>
+        <figure>
+          <img src="/static/img/charts/boxplot-distancia.png" alt="Barrios según distancia a la Puerta del Sol" style="width:300px; height: auto;">
+          <figcaption>Barrios según distancia a la Puerta del Sol. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-distance-locals-line/>
         
@@ -324,15 +397,31 @@
 
         <p>Se toma la población de los barrios como un indicador de tamaño. La relación es claramente significativa, ya que alcanza un chi cuadrado muy significativo (53,1, con p muy bajo), si bien el coeficiente que mide el grado de la relación es moderado (0,54, sobre un máximo de 0,89). Se produce la polaridad barrios pequeños-pocos locales y barrios grandes- muchos locales. Aun así, hay que destacar los residuos positivos muy elevados de los barrios grandes en el intervalo de 4-6 locales.</p>
 
+      </section>
+    </div>
+
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
         <table-neighborhoods-by-poblation/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
 
         <p>La media no ponderada del tamaño según el número de locales aumenta en los tramos más bajos del número de locales, para luego zigzaguear. Nótese en el diagrama de cajas que la mediana aumenta significativamente en los barrios medianos y grandes respecto de los pequeños y muy pequeños y, asimismo, nótese que todos los barrios a partir de 20.000 habitantes tienen al menos un local.</p>
 
-        <p>MAPA</p>
+        <figure>
+          <img src="/static/img/charts/mapa-poblacion.jpg" alt="Barrios según población">
+          <figcaption>Barrios según población. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-population-locals/>
 
-        <p>BOXPLOT</p>
+        <figure>
+          <img src="/static/img/charts/boxplot-poblacion.png" alt="Barrios según población" style="width:300px; height: auto;">
+          <figcaption>Barrios según población. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-population-locals-line/>
         
@@ -340,13 +429,29 @@
 
         <p>La densidad, igualmente, muestra una relación de dependencia moderada con la distribución del número de locales. Así, el chi cuadrado sube a 51,5 (p = muy baja) y el coeficiente de contingencia es 0,53, sobre un máximo de 0,89. A más densidad, más locales. Pero, como en los casos anteriores, hay muchos barrios con densidades elevadas y pocos locales. De ahí la moderación de la fuerza de la relación.</p>
 
-        <table-neighborhoods-by-density/>
+      </section>
+    </div>
 
-        <p>MAPA</p>
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
+        <table-neighborhoods-by-density/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
+
+        <figure>
+          <img src="/static/img/charts/mapa-densidad.jpg" alt="Barrios según densidad">
+          <figcaption>Barrios según densidad. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-density-locals/>
 
-        <p>BOXPLOT</p>
+        <figure>
+          <img src="/static/img/charts/boxplot-densidad.png" alt="Barrios según densidad" style="width:300px; height: auto;">
+          <figcaption>Barrios según densidad. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-density-locals-line/>
 
@@ -354,13 +459,29 @@
 
         <p>Se aprecia una asociación muy débil entre el peso de la población de 16-29 años por barrios y el número de locales: el chi cuadrado sube a 24,8, con un p = 0.074, significativo para un nivel de confianza del 92,6%. A su vez, el coeficiente de contingencia es bajo: 0,4, sobre un máximo de 0,89. No se perfila una tendencia clara, como muestra el diagrama de dispersión. El número de locales aumenta según lo hace el peso de la juventud. La presencia de casas de juego es más probable en los barrios que se mueven alrededor de la media o algo por encima en cuanto al % de jóvenes.</p>
 
-        <table-neighborhoods-by-youngs/>
+      </section>
+    </div>
 
-        <p>MAPA</p>
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
+        <table-neighborhoods-by-youngs/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
+
+        <figure>
+          <img src="/static/img/charts/mapa-jovenes.jpg" alt="Barrios según tasa de jóvenes">
+          <figcaption>Barrios según tasa de jóvenes. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-youngs-locals/>
 
-        <p>BOXPLOT</p>
+        <figure>
+          <img src="/static/img/charts/boxplot-jovenes.png" alt="Barrios según tasa de jóvenes" style="width:300px; height: auto;">
+          <figcaption>Barrios según tasa de jóvenes. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-youngs-locals-line/>
 
@@ -368,13 +489,29 @@
 
         <p>Como en el caso anterior, la asociación entre el peso de la población de 65 y más años y el número de locales es muy débil: el chi cuadrado es igual a 26,6, con p = 0,046, y el coeficiente de contingencia sube a 0,41, con un máximo posible de 0,89. El diagrama de dispersión no muestra una tendencia clara, mientras que la curva en el último gráfico sigue una trayectoria paralela al eje horizontal. La presencia de casas de juego es más probable en los barrios que se mueven alrededor de la media o algo por debajo en cuanto al % de mayores de 64 años.</p>
 
-        <table-neighborhoods-by-senility/>
+      </section>
+    </div>
 
-        <p>MAPA</p>
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
+        <table-neighborhoods-by-senility/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
+
+        <figure>
+          <img src="/static/img/charts/mapa-senilidad.jpg" alt="Barrios según tasa de senilidad">
+          <figcaption>Barrios según tasa de senilidad. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-senility-locals/>
 
-        <p>BOXPLOT</p>
+        <figure>
+          <img src="/static/img/charts/boxplot-senilidad.png" alt="Barrios según tasa de senilidad" style="width:300px; height: auto;">
+          <figcaption>Barrios según tasa de senilidad. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-senility-locals-line/>
 
@@ -382,13 +519,29 @@
 
         <p>Al contrario que en los casos anteriores, el peso de la población extranjera por barrios sí se relaciona claramente con el número de locales. El chi cuadrado es 69,5 (con p muy baja) y el coeficiente de contingencia 0,59, sobre un máximo de 0,89. A mayor proporción de extranjeros más locales, si bien igualmente ocurre que hay barrios con pocos extranjeros y muchos locales y viceversa. La mayoría de los barrios con ningún local o a lo sumo 1-2 tienen proporciones bajas de inmigrantes, mientras que la mayoría de los barrios con 7 o más locales tienen proporciones altas.</p>
 
-        <table-neighborhoods-by-foreigns/>
+      </section>
+    </div>
 
-        <p>MAPA</p>
+    <div class="page__wrap page__wrap--big">
+      <section class="page__section page__section--text">
+        <table-neighborhoods-by-foreigns/>
+      </section>
+    </div>
+
+    <div class="page__wrap">
+      <section class="page__section page__section--text">
+
+        <figure>
+          <img src="/static/img/charts/mapa-extranjeros.jpg" alt="Barrios según tasa de extranjeros">
+          <figcaption>Barrios según tasa de extranjeros. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-foreigns-locals/>
 
-        <p>BOXPLOT</p>
+        <figure>
+          <img src="/static/img/charts/boxplot-extranjeros.png" alt="Barrios según tasa de extranjeros" style="width:300px; height: auto;">
+          <figcaption>Barrios según tasa de extranjeros. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-foreigns-locals-line/>
 
@@ -396,7 +549,10 @@
 
         <p>Para medir la variable coste de instalación se ha tomado la media del precio de venta por metro cuadrado de las viviendas a finales de 2018, según el portal de Idealista.com. No se observa relación definida de esta variable y el número de locales por barrios, pues el chi-cuadrado suma tan solo 15,36, con una p muy alta = 0,498. Por ello se obvia reproducir las tablas de contingencia y de residuos típicos corregidos.</p>
 
-        <p>MAPA</p>
+        <figure>
+          <img src="/static/img/charts/mapa-precios.jpg" alt="Barrios según precio del metro cuadrado">
+          <figcaption>Barrios según precio del metro cuadrado. FRAVM.</figcaption>
+        </figure>
 
         <chart-neighborhoods-by-price-locals/>
 

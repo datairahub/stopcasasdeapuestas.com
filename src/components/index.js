@@ -51,7 +51,8 @@ Vue.component('chart-neighborhoods-by-price-locals',              require('./sec
 Vue.component('chart-neighborhoods-by-price-locals-line',         require('./sections/chart-neighborhoods-by-price-locals-line').default);
 Vue.component('chart-locals-by-educationcenters',                 require('./sections/chart-locals-by-educationcenters').default);
 
-Vue.component('map-neighborhoods-by-locals',              require('./sections/map-neighborhoods-by-locals').default);
+Vue.component('map-districts-by-locals',                   require('./sections/map-districts-by-locals').default);
+//Vue.component('map-neighborhoods-by-locals',              require('./sections/map-neighborhoods-by-locals').default);
 
 
 // Charts
