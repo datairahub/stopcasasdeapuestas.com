@@ -10,8 +10,8 @@ export default {
     data: function(){
         return {
             datum: [
-                {name: '0 locales', value: 37},
-                {name: '1 local', value: 24},
+                {name: '0', value: 37},
+                {name: '1', value: 24},
                 {name: '2', value: 16},
                 {name: '3', value: 9},
                 {name: '4', value: 12},
@@ -22,13 +22,21 @@ export default {
                 {name: '9', value: 4},
                 {name: '10', value: 2},
                 {name: '11', value: 1},
+                {name: '12', value: 0},
+                {name: '13', value: 0},
+                {name: '14', value: 0},
+                {name: '15', value: 0},
+                {name: '16', value: 0},
+                {name: '17', value: 0},
+                {name: '18', value: 0},
+                {name: '19', value: 0},
                 {name: '20', value: 1},
                 {name: '21', value: 2},
             ],
             config: {
                 key: 'name',
                 value: 'value',
-                color: '#7dd87d',
+                color: '#499491',
                 yAxis: 'Nº de barrios',
                 margin: {
                     bottom: 20,

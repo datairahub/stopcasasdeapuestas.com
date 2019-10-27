@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'chart-locals-by-rent',
+    name: 'chart-neighborhoods-by-rent-locals-line',
     data: function(){
         return {
             datum: [
@@ -32,8 +32,9 @@ export default {
                 dateFormat: '%Y',
                 dateFormatOutput: '%y',
                 yScaleFormat: '.0s',
-                xScaleTicks: 10,
+                xScaleTicks: 20,
                 yAxis: 'Renta media',
+                colorScheme: ['#41228e']
             },
             title: 'Promedio no ponderado de la renta media de los hogares según el nº de locales',
             source: 'Fuente: FRAVM',

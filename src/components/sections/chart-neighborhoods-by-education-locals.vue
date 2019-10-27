@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'chart-neighborhoods-by-rent-locals',
+    name: 'chart-neighborhoods-by-education-locals',
     data: function(){
         return {
             datum: [
@@ -20,9 +20,9 @@ export default {
                 labelX: 'Renta',
                 labelY: 'Locales',
                 yAxis: 'Nº de locales',
-                color: '#41228e'
+                color: '#35c2bd'
             },
-            title: 'Barrios según renta y número de locales',
+            title: 'Barrios según nivel de estudios bajos y número de locales',
             source: 'Fuente: FRAVM.',
         }
     }

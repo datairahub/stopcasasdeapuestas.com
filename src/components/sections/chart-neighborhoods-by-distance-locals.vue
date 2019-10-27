@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'chart-neighborhoods-by-rent-locals',
+    name: 'chart-neighborhoods-by-distance-locals',
     data: function(){
         return {
             datum: [
@@ -20,9 +20,9 @@ export default {
                 labelX: 'Renta',
                 labelY: 'Locales',
                 yAxis: 'Nº de locales',
-                color: '#41228e'
+                color: '#11999e'
             },
-            title: 'Barrios según renta y número de locales',
+            title: 'Barrios según distancia a la Puerta del Sol y número de locales',
             source: 'Fuente: FRAVM.',
         }
     }

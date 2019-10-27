@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'chart-neighborhoods-by-rent-locals',
+    name: 'chart-neighborhoods-by-unemployment-locals',
     data: function(){
         return {
             datum: [
@@ -20,9 +20,9 @@ export default {
                 labelX: 'Renta',
                 labelY: 'Locales',
                 yAxis: 'Nº de locales',
-                color: '#41228e'
+                color: '#4aa0d5'
             },
-            title: 'Barrios según renta y número de locales',
+            title: 'Barrios según tasa de paro y número de locales',
             source: 'Fuente: FRAVM.',
         }
     }

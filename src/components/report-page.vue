@@ -264,13 +264,13 @@
         
         <chart-neighborhoods-by-rent-locals/>
 
-        <p>El diagrama de cajas ilustra perfectamente la situación. En él se agrupan los barrios en cinco niveles de renta (de menos a más) y para cada uno se cuenta con la distribución del número de locales, señalando el valor máximo, mínimo, la mediana y los percentiles 25 y 75. A mayor amplitud de la caja, mayor dispersión de la variable. El máximo y la mediana son elevados en los estratos bajos de renta y desciende muy significativamente al pasar de uno al siguiente. Nótese la desemejanza extrema entre el primer y el quinto estratos.</p>
+        <p>El diagrama de cajas ilustra perfectamente la situación. En él se agrupan los barrios en cinco niveles de renta (de menos a más) y para cada uno se cuenta con la distribución del número de locales, señalando el valor máximo, mínimo, la mediana y los percentiles 25 y 75. A mayor amplitud de la caja, mayor dispersión de la variable. El máximo y la mediana son elevados en los estratos bajos de renta y desciende muy significativamente al pasar de uno al siguiente. Nótese la desemejanza extrema entre el primer y el quinto estrato.</p>
 
         <p>BOXPLOT</p>
 
         <p>En el gráfico siguiente se representa el promedio no ponderado de los ingresos medios de los hogares de los barrios clasificados según el número de locales de juego. El sentido descendente de la curva es palmario.</p>
 
-        <chart-locals-by-rent/>
+        <chart-neighborhoods-by-rent-locals-line/>
 
         <h4 ref="paro">Tasa absoluta de paro</h4>
 
@@ -282,11 +282,11 @@
         
         <p>MAPA</p>
 
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-unemployment-locals/>
 
         <p>BOXPLOT</p>
 
-        <p>FEVER</p>
+        <chart-neighborhoods-by-unemployment-locals-line/>
         
         <h4 ref="educacion">Nivel educativo</h4>
 
@@ -298,11 +298,11 @@
         
         <p>MAPA</p>
 
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-education-locals/>
 
         <p>BOXPLOT</p>
 
-        <p>FEVER</p>
+        <chart-neighborhoods-by-education-locals-line/>
         
         <h4 ref="distanciasol">Distancia de los barrios a la Puerta del Sol</h4>
 
@@ -314,11 +314,11 @@
 
         <table-neighborhoods-by-distance/>
 
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-distance-locals/>
 
         <p>BOXPLOT</p>
 
-        <p>FEVER</p>
+        <chart-neighborhoods-by-distance-locals-line/>
         
         <h4 ref="poblacion">Población</h4>
 
