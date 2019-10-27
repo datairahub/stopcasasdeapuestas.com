@@ -20,7 +20,7 @@
     </thead>
     <tbody>
       <tr v-for="row in table">
-        <td>{{row[0]}}</td>
+        <td class="strong">{{row[0]}}</td>
         <td class="num">{{row[1]}}</td>
         <td class="num">{{row[2]}}</td>
         <td class="num">{{row[3]}}</td>

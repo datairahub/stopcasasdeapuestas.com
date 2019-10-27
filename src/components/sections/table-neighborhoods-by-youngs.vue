@@ -16,8 +16,8 @@
       </thead>
       <tbody>
         <tr v-for="row in table">
-          <td>{{row[0]}}</td>
-          <td>{{row[1]}}</td>
+          <td class="strong">{{row[0]}}</td>
+          <td class="strong">{{row[1]}}</td>
           <td class="num">{{row[2]}}</td>
           <td class="num">{{row[3]}}</td>
           <td class="num">{{row[4]}}</td>
@@ -47,7 +47,7 @@
       </thead>
       <tbody>
         <tr v-for="row in table2">
-          <td>{{row[0]}}</td>
+          <td class="strong">{{row[0]}}</td>
           <td class="num">{{row[1]}}</td>
           <td class="num">{{row[2]}}</td>
           <td class="num">{{row[3]}}</td>

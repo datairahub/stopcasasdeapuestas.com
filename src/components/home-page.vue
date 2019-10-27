@@ -9,19 +9,24 @@
       </section>
 
       <section class="page__section page__section--text">
-        <p>Los locales de juego y los salones de apuestas constituyen un problema social importante, siendo la ludopatía es una patología social que no cesa de crecer y enraizar en las grandes ciudades, mientras los poderes públicos apenas le prestan importancia.</p>
-        <p>En este proyecto, realizado por la FRAVM con la colaboración de Dadasign, hemos realizado una extracción y análisis de datos, acompañado de un <router-link :to="{name:'report'}">informe</router-link> y un <router-link :to="{name:'map'}">mapa interactivo</router-link>, donde nos detenemos a examinar el número y las correlaciones de la ubicación de los locales con otras variables socioeconómicas. Las notas que merece la pena subrayar son:</p>
-        <ul>
-          <li>La localización de las casas de apuestas se organiza sobre patrones bien identificables.</li>
-          <li>Predominan los barrios con una renta media de los hogares por debajo de la media.</li>
-          <li>Hay pocos locales en los barrios de alto nivel de estudios, y muchos en los barrios con un nivel de estudios bajo.</li>
-          <li>Los mismo ocurre con la tasa de desempleo.</li>
-          <li>Los establecimientos se dan más en barrios con mucha población y altas densidades.</li>
-          <li>Hay una correlación notable con la presencia en barrios con alta población extranjera.</li>
-        </ul>
-        <p>Así las cosas, hemos de guardarnos de conclusiones precipitadas. El fenómeno de las casas de juego es reciente, probablemente no ha tocado techo. Las pautas de localización ahora conocidas dan pistas sobre el futuro previsible.</p>
+        <p>Los locales de juego y los salones de apuestas constituyen un problema social importante, siendo la ludopatía es una patología social que no cesa de crecer y enraizar en las grandes ciudades, mientras los poderes públicos apenas le prestan atención.</p>
+        <p>En este proyecto hemos realizado una extracción y análisis de datos, acompañado de un <router-link :to="{name:'report'}">informe</router-link> y un <router-link :to="{name:'map'}">mapa interactivo</router-link>, donde nos detenemos a examinar el número y las correlaciones de la ubicación de los locales con otras variables socioeconómicas.</p>
       </section>
 
+      <section class="page__section page__section--logos">
+        <div class="page__wrap">
+          Elaborado por
+          <a href="">
+            <img src="/static/img/logos/FRAVM.jpg" alt="FRAVM">
+          </a>
+        </div>
+        <div class="page__wrap">
+          Con la colaboración de
+          <a href="">
+            <img src="/static/img/logos/dadasign.png" alt="Dadasign" style="margin-top:5%">
+          </a>
+        </div>
+      </section>
     </div>
 
     <div class="page__map" v-show="width>=minWidthWide">

@@ -91,6 +91,26 @@
               margin-left: 24px;
             }
         }
+        &--logos {
+          padding: 0 20px;
+          display: flex;
+          flex-wrap: wrap;
+          .page__wrap {
+            font-size: smaller;
+            text-align: center;
+            flex: 1 1 50%;
+            padding-top: 0;
+            overflow-y: hidden;
+          }
+          a {
+            display: block;
+            margin-top: 10px;
+          }
+          img {
+            width: 50%;
+            height: auto;
+          }
+        }
         &--text {
           ul {
             padding-left: 20px;
