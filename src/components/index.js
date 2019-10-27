@@ -23,6 +23,7 @@ Vue.component('table-neighborhoods-by-poblation',       require('./sections/tabl
 Vue.component('table-neighborhoods-by-density',         require('./sections/table-neighborhoods-by-density').default);
 Vue.component('table-neighborhoods-by-youngs',          require('./sections/table-neighborhoods-by-youngs').default);
 Vue.component('table-neighborhoods-by-senility',        require('./sections/table-neighborhoods-by-senility').default);
+Vue.component('table-neighborhoods-by-foreigns',        require('./sections/table-neighborhoods-by-foreigns').default);
 Vue.component('table-regression',                       require('./sections/table-regression').default);
 
 Vue.component('locals-by-distric',                      require('./sections/locals-by-distric').default);

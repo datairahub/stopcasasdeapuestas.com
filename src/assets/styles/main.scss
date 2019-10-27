@@ -42,6 +42,7 @@
             flex: 1 1 50%;
             max-height: calc(100vh - 40px);
             overflow-y: scroll;
+            max-width: 800px;
         }
         .page__map {
             flex: 1 1 50%;

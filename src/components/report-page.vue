@@ -382,9 +382,7 @@
 
         <p>Al contrario que en los casos anteriores, el peso de la población extranjera por barrios sí se relaciona claramente con el número de locales. El chi cuadrado es 69,5 (con p muy baja) y el coeficiente de contingencia 0,59, sobre un máximo de 0,89. A mayor proporción de extranjeros más locales, si bien igualmente ocurre que hay barrios con pocos extranjeros y muchos locales y viceversa. La mayoría de los barrios con ningún local o a lo sumo 1-2 tienen proporciones bajas de inmigrantes, mientras que la mayoría de los barrios con 7 o más locales tienen proporciones altas.</p>
 
-        <p>TABLA</p>
-
-        <p>TABLA</p>
+        <table-neighborhoods-by-foreigns/>
 
         <p>MAPA</p>
 
