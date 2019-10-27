@@ -8,7 +8,7 @@
 
       <section class="page__section page__section--text">
         <p>Censo de locales de apuestas proporcionado por el Ayto. de Madrid y completado con locales obtenidos por la FRAVM. <a href="/static/data/locales-fravm.csv">Descargar CSV</a>.</p>
-        <p>Censo de locales de apuestas a nivel estatal obtenido por Dadasign mediante técnicas de scraping. <a href="/static/data/locales-dataira.csv">Descargar CSV</a>.</p>
+        <p>Censo de locales de apuestas a nivel estatal obtenido por Dadasign mediante técnicas de scraping. <a href="/static/data/locales-dadasign.csv">Descargar CSV</a>.</p>
         <p>Censo de centros educativos públicos no universitarios de la Comunidad de Madrid. <a href="/static/data/educacion-cmadrid.csv">Descargar CSV</a>.</p>
         <br><br><br>
       </section>

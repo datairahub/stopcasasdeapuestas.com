@@ -34,7 +34,7 @@ export default {
                 yScaleFormat: '.0f',
                 xScaleTicks: 20,
                 yAxis: 'Tasa de senilidad',
-                colorScheme: ['#4aa0d5']
+                colorScheme: ['#359768']
             },
             title: 'Proporción media no ponderada de la tasa de senilidad según el nº de locales',
             source: 'Fuente: FRAVM',

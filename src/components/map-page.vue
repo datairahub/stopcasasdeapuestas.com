@@ -129,7 +129,7 @@ export default {
     },
     localesdadasign(val){
       if(val && !this.loadedPoints.localesdadasign){
-        d3.csv("static/data/locales-dataira.csv").then(data=>{
+        d3.csv("static/data/locales-dadasign.csv").then(data=>{
           this.loadedPoints.localesdadasign = true;
           this.points.localesdadasign = data;
           this.loadPoints(this.points.localesdadasign)
