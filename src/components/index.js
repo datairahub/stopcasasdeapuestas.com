@@ -27,10 +27,11 @@ Vue.component('table-neighborhoods-by-foreigns',        require('./sections/tabl
 Vue.component('table-correlations',                     require('./sections/table-correlations').default);
 Vue.component('table-regression',                       require('./sections/table-regression').default);
 
-Vue.component('locals-by-distric',                      require('./sections/locals-by-distric').default);
-Vue.component('neighborhoods-by-locals',                require('./sections/neighborhoods-by-locals').default);
-Vue.component('locals-by-rent',                         require('./sections/locals-by-rent').default);
-Vue.component('locals-by-educationcenters',             require('./sections/locals-by-educationcenters').default);
+Vue.component('chart-locals-by-distric',                require('./sections/chart-locals-by-distric').default);
+Vue.component('chart-neighborhoods-by-locals',          require('./sections/chart-neighborhoods-by-locals').default);
+Vue.component('chart-neighborhoods-by-rent-locals',     require('./sections/chart-neighborhoods-by-rent-locals').default);
+Vue.component('chart-locals-by-rent',                   require('./sections/chart-locals-by-rent').default);
+Vue.component('chart-locals-by-educationcenters',       require('./sections/chart-locals-by-educationcenters').default);
 
 
 
@@ -39,3 +40,4 @@ Vue.component('locals-by-educationcenters',             require('./sections/loca
 // Charts
 Vue.component('bar-chart',                              require('./charts/barchart/bar-chart').default);
 Vue.component('line-chart',                             require('./charts/linechart/line-chart').default);
+Vue.component('scatter-plot',                           require('./charts/scatterplot/scatter-plot').default);

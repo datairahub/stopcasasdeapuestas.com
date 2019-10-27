@@ -120,7 +120,7 @@
 
     <div class="page__wrap page__wrap--big">
       <section class="page__section page__section--text">
-        <locals-by-distric/>
+        <chart-locals-by-distric/>
       </section>
     </div>
 
@@ -137,7 +137,7 @@
 
         <p>En la distribución destaca la treintena (37) de barrios en los que no hay locales, completada por otros 40 en los que hay 1-2. Son barrios muy periféricos, mayoritariamente localizados en el norte y oeste y a lo largo de la margen oriental de La Castellana. En cambio, 18 barrios, con 7 y más locales absorben la mitad. En particular, Vista Alegre y San Diego, con 21, y Sol, con 20 encabezan la lista.  Detrás, a bastante distancia, aparecen Moscardó, Aluche, Bellas Vistas, Embajadores, Palos de Moguer, Quintana… En el mapa se observa que mayoritariamente son barrios meridionales ubicados en los bordes de la M-30.</p>
 
-        <neighborhoods-by-locals/>
+        <chart-neighborhoods-by-locals/>
 
         <p>MAPA</p>
 
@@ -262,7 +262,7 @@
 
         <p>MAPA</p>
         
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-rent-locals/>
 
         <p>El diagrama de cajas ilustra perfectamente la situación. En él se agrupan los barrios en cinco niveles de renta (de menos a más) y para cada uno se cuenta con la distribución del número de locales, señalando el valor máximo, mínimo, la mediana y los percentiles 25 y 75. A mayor amplitud de la caja, mayor dispersión de la variable. El máximo y la mediana son elevados en los estratos bajos de renta y desciende muy significativamente al pasar de uno al siguiente. Nótese la desemejanza extrema entre el primer y el quinto estratos.</p>
 
@@ -270,7 +270,7 @@
 
         <p>En el gráfico siguiente se representa el promedio no ponderado de los ingresos medios de los hogares de los barrios clasificados según el número de locales de juego. El sentido descendente de la curva es palmario.</p>
 
-        <locals-by-rent/>
+        <chart-locals-by-rent/>
 
         <h4 ref="paro">Tasa absoluta de paro</h4>
 
@@ -541,7 +541,7 @@
 
         <p>Aunque la normativa vigente fija una distancia mínima de 100 metros de cada local y salón a un colegio, es indudable que el caso más preocupante y sobre el que merece la pena enfatizar la atención es el de la distancia respecto de los centros de secundaria. La regla de los 100 metros parece muy tímida. En el siguiente cuadro se estima el número de locales y salones que tienen algún colegio dentro de su área considerando varios radios.</p>
 
-        <locals-by-educationcenters/>
+        <chart-locals-by-educationcenters/>
         <!-- end educationcenters -->
 
       </section>

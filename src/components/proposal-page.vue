@@ -3,8 +3,8 @@
     <div class="page__wrap">
 
       <section class="page__section page__section--head">
-        <h1 class="page__title">Propuestas</h1>
-        <p class="page__subtitle">Propuestas elaboradas por la FRAVM para reducir y controlar la implantación de casas de apuestas en la Comunidad de Madrid.</p>
+        <h1 class="page__title">Propuestas en materia de locales de juego y apuestas</h1>
+        <p class="page__subtitle">Propuestas para la regulación de las casas de apuestas en la Comunidad de Madrid.</p>
       </section>
 
       <section class="page__section page__section--contents">
@@ -16,6 +16,17 @@
       </section>
 
       <section class="page__section page__section--text">
+
+        <!-- start introduccion -->
+        <h3 ref="introduccion">Introducción</h3>
+        <p>Antes de la aprobación del <a href="http://www.bocm.es/boletin/CM_Orden_BOCM/2019/05/17/BOCM-20190517-2.PDF">Decreto 42/2019</a>, la FRAVM y otras organizaciones<sup>1</sup> suscribieron un <a href="https://aavvmadrid.org/noticias/propuestas-urgentes-en-materia-de-locales-de-juego-y-apuestas/">documento de propuestas</a>. Aquí nos hacemos eco de ellas, introduciendo algunas novedades determinadas por la aparición de nuevas circunstancias, entre ellas el propio Decreto.</p>
+
+        <div class="legend">
+          <div class="legend__wrap">
+            <sup>1</sup> Los firmantes fueron: FRAVM (Federación Regional de Asociaciones Vecinales de Madrid), APAL (Asociación para la Prevención y Ayuda al Ludopata), ActívaT Red de Abogados, FERMAD (Plataforma Madrileña de Entidades para la Asistencia a la Persona Adicta y su Familia), Federación Injucam para la Promoción de la Infancia y la Juventud, ALEJER (Asociación Leganense de Jugadores en Rehabilitación), AFUJER (Asociación Fuenlabreña Jugadores en Rehabilitación), Vida sin juego, ALYA (Asociación para el Tratamiento de la Ludopatía y las Nuevas Adicciones), APEAP (Asociación Psicoterapeutas para el Estudio de las Adicciones Psicológicas), ATEJ (Asociación Terapéutica del Juego), Red de ONGD de Madrid y Colegio Oficial de Psicólogos de Madrid.
+          </div>
+        </div>
+        <!-- end introduccion -->
 
         <!-- start comunidad -->
         <h3 ref="comunidad">Para la Comunidad de Madrid</h3>
@@ -49,6 +60,8 @@
           <li>9. <strong>Prohibir la publicidad en los medios e instalaciones de transporte colectivo</strong> de titularidad municipal.</li>
         </ul>
         <!-- end ayuntamientos -->
+
+        <br><br><br>
 
 
       </section>
