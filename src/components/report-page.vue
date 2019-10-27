@@ -386,11 +386,11 @@
 
         <p>MAPA</p>
 
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-foreigns-locals/>
 
         <p>BOXPLOT</p>
 
-        <p>FEVER</p>
+        <chart-neighborhoods-by-foreigns-locals-line/>
 
         <h4 ref="preciovivienda">Precio de las viviendas</h4>
 
@@ -398,9 +398,9 @@
 
         <p>MAPA</p>
 
-        <p>SCATTERPLOT</p>
+        <chart-neighborhoods-by-price-locals/>
 
-        <p>FEVER</p>
+        <chart-neighborhoods-by-price-locals-line/>
 
         <!-- end determinantes -->
 
