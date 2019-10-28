@@ -12,7 +12,7 @@ export default new Router({
   routes: [
     { path: '/',                           component: ComponentFactory('home-page'),        name: 'home'},
     { path: '/mapa',                       component: ComponentFactory('map-page'),         name: 'map'},
-    { path: '/mapa-frame',                 component: ComponentFactory('iframe-page'),      name: 'iframe'},
+    { path: '/mapa-frame',                 component: ComponentFactory('map-page'),         name: 'iframe'},
     { path: '/datos',                      component: ComponentFactory('data-page'),        name: 'data'},
     { path: '/informe',                    component: ComponentFactory('report-page'),      name: 'report'},
     { path: '/propuestas',                 component: ComponentFactory('proposal-page'),    name: 'proposal'},

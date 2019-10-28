@@ -1,4 +1,15 @@
 import D3Map from './d3.map'
+import {selectAll} from 'd3-selection'
+import {scaleSequential} from 'd3-scale'
+import {extent} from 'd3-array'
+import {interpolateRdYlBu} from 'd3-scale-chromatic'
+
+const d3 = {
+    selectAll,
+    extent,
+    scaleSequential,
+    interpolateRdYlBu,
+}
 
 class D3MapPoints extends D3Map  {
 
@@ -10,6 +21,7 @@ class D3MapPoints extends D3Map  {
             click: ()=>{}
         }
         this.popup = new L.Popup();
+        this.colorScale = d3.scaleSequential(d3.interpolateRdYlBu)
     }
     loadPoints(points){
 
@@ -41,6 +53,41 @@ class D3MapPoints extends D3Map  {
                 this.map.removeLayer(this.circles[d.id])
                 delete this.circles[d.id]
             }
+        })
+    }
+
+    loadLayers(geojson){
+        this.layers = []
+        geojson.features.forEach(feature=>{
+            let lgeo = L.geoJSON({
+                type: 'FeatureCollection',
+                features: [feature]
+            },{
+                style: {stroke: 0, fillOpacity: 0.7},
+            })
+            lgeo.addTo(this.map)
+            this.layers.push({
+                feature: feature,
+                layer: lgeo
+            })
+        })
+        this.colorLayer('NUMPOINTS')
+    }
+
+    removeLayers(){
+        this.layers.forEach(layercomp=>{
+            this.map.removeLayer(layercomp.layer)
+        })
+    }
+
+    colorLayer(val){
+        let data = this.layers.map(d=>d.feature.properties[val])
+        let limits = d3.extent(data);
+        this.colorScale.domain([limits[1], limits[0]])
+        this.layers.forEach(d=>{
+            d.layer.setStyle({
+                fillColor: this.colorScale(d.feature.properties[val])
+            }) 
         })
     }
 

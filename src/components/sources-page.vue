@@ -37,7 +37,8 @@
         <p>Última actualización de los datos: abril de 2019</p>
 
         <h3 ref="barrios">Datos demográficos de Madrid</h3>
-
+        <p>La información está tomada del <a href="https://datos.madrid.es/portal/site/egob/.">portal de datos abiertos del Ayuntamiento de Madrid</a></p>
+        
         <br><br><br>
 
       </section>

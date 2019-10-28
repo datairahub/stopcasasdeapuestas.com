@@ -2,7 +2,7 @@
   <div>
     <div id="map" ref="map" :style="{'height': height+'px'}"></div>
     <div class="overmap">
-      <div class="overmap__wrap">
+      <div class="overmap__wrap" :class="{'overmap__wrap--iframe': $route.name == 'iframe'}">
 
         <div class="overmap__menu" :class="{active:menuexpanded}">
           <h4>Locales de apuestas</h4>
@@ -22,6 +22,23 @@
               <input id="colegios-ayuntamiento" type="checkbox" v-model="educacioncmadrid">
               <label for="colegios-ayuntamiento">Datos C. Madrid</label>
             </li>
+          </ul>
+          <h4>Barrios Madrid</h4>
+          <ul>
+            <li>
+              <input id="mad-adm5" type="checkbox" v-model="barriosmadrid">
+              <label for="mad-adm5">Barrios de Madrid</label>
+            </li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="NUMPOINTS"> Locales</label></li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="RENTA"> Renta</label></li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="PARO"> Paro</label></li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="ESTUDIOS_B"> Estudios bajos</label></li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="POBLACION"> Población</label></li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="DENSIDAD"> Densidad</label></li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="JOVENES"> Jóvenes</label></li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="SENIL"> Mayores</label></li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="EXTRANJERO"> Extranjeros</label></li>
+            <li v-show="barriosmadrid"><label><input type="radio" name="layercolor" v-model="layercolor" value="PRECIO"> Precio m<sup>2</sup></label></li>
           </ul>
           <router-link :to="{name:'sources'}">Fuentes y metodología</router-link>
           <div class="legend" v-show="localesfravm||localesdadasign||educacioncmadrid">
@@ -52,7 +69,8 @@
         </div>
 
         <div class="overmap__frame">
-          <router-link :to="{name:'iframe'}">Mapa para embeber en iframe</router-link>
+          <router-link v-if="$route.name=='map'" :to="{name:'iframe'}">Mapa para iframe</router-link>
+          <a v-if="$route.name=='iframe'" href="http://www.stopcasasdeapuestas.com">stopcasasdeapuestas.com</a>
         </div>
 
       </div>
@@ -80,16 +98,22 @@ export default {
       localesfravm: false,
       localesdadasign: false,
       educacioncmadrid: false,
+      barriosmadrid: false,
       loadedPoints: {
         localesfravm: false,
         localesdadasign: false,
         educacioncmadrid: false,
+        barriosmadrid: false,
       },
       points: {
         localesfravm: [],
         localesdadasign: [],
         educacioncmadrid: [],
-      }
+      },
+      layers: {
+        barriosmadrid: {},
+      },
+      layercolor: 'NUMPOINTS',
     }
   },
   mounted: function() {
@@ -102,11 +126,6 @@ export default {
       lng: this.lng,
       zoom: this.zoom,
     });
-
-    this.map.onpoint('click', data=>{
-        //EventBus.$emit('point_click', data);
-        console.log('click', data);
-    })
 
     this.getCanvasSize();
     this.localesfravm = true;
@@ -121,45 +140,83 @@ export default {
     },
     removePoints(points){
       this.map.removePoints(points);
+    },
+    loadLayers(feature){
+      this.map.loadLayers(feature);
+    },
+    removeLayers(){
+      this.map.removeLayers();
+    },
+    colorLayer(val){
+      this.map.colorLayer(val);
     }
   },
   watch: {
     localesfravm(val){
-      if(val && !this.loadedPoints.localesfravm){
-        d3.csv("static/data/locales-fravm.csv").then(data=>{
-          this.loadedPoints.localesfravm = true;
-          this.points.localesfravm = data;
+      if(val){
+        if(!this.loadedPoints.localesfravm){
+          d3.csv("static/data/locales-fravm.csv").then(data=>{
+            this.loadedPoints.localesfravm = true;
+            this.points.localesfravm = data;
+            this.loadPoints(this.points.localesfravm)
+          });
+        }else{
           this.loadPoints(this.points.localesfravm)
-        });
+        }
       }else{
-        this.loadedPoints.localesfravm = false;
         this.removePoints(this.points.localesfravm)
       }
     },
     localesdadasign(val){
-      if(val && !this.loadedPoints.localesdadasign){
-        d3.csv("static/data/locales-dadasign.csv").then(data=>{
-          this.loadedPoints.localesdadasign = true;
-          this.points.localesdadasign = data;
+      if(val){
+        if(!this.loadedPoints.localesdadasign){
+          d3.csv("static/data/locales-dadasign.csv").then(data=>{
+            this.loadedPoints.localesdadasign = true;
+            this.points.localesdadasign = data;
+            this.loadPoints(this.points.localesdadasign)
+          });
+        }else{
           this.loadPoints(this.points.localesdadasign)
-        });
+        }
       }else{
-        this.loadedPoints.localesdadasign = false;
         this.removePoints(this.points.localesdadasign)
       }
     },
     educacioncmadrid(val){
-      if(val && !this.loadedPoints.educacioncmadrid){
-        d3.csv("static/data/educacion-cmadrid.csv").then(data=>{
-          this.loadedPoints.educacioncmadrid = true;
-          this.points.educacioncmadrid = data;
+      if(val){
+        if(!this.loadedPoints.educacioncmadrid){
+          d3.csv("static/data/educacion-cmadrid.csv").then(data=>{
+            this.loadedPoints.educacioncmadrid = true;
+            this.points.educacioncmadrid = data;
+            this.loadPoints(this.points.educacioncmadrid)
+          });
+        }else{
           this.loadPoints(this.points.educacioncmadrid)
-        });
+        }
       }else{
-        this.loadedPoints.educacioncmadrid = false;
         this.removePoints(this.points.educacioncmadrid)
       }
-    }
+    },
+    barriosmadrid(val){
+      if(val){
+        if(val && !this.loadedPoints.barriosmadrid){
+          d3.json("static/data/MAD_adm5.json").then(data=>{
+            this.loadedPoints.barriosmadrid = true;
+            this.layers.barriosmadrid = data;
+            this.loadLayers(this.layers.barriosmadrid)
+            this.layercolor = 'NUMPOINTS'
+          });
+        }else{
+          this.loadLayers(this.layers.barriosmadrid)
+          this.layercolor = 'NUMPOINTS'
+        }
+      }else{
+        this.removeLayers()
+      }
+    },
+    layercolor(val){
+      this.colorLayer(val);
+    },
   }
 }
 
@@ -181,6 +238,9 @@ export default {
     position: relative;
     height: 100%;
     box-sizing: border-box;
+    &--iframe {
+      padding-top: 20px;
+    }
   }
 
   &__frame {
