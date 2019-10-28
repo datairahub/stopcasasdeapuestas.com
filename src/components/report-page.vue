@@ -3,9 +3,8 @@
     <div class="page__wrap">
 
       <section class="page__section page__section--head">
-        <h1 class="page__title">Localización de los locales de juego y salones de apuestas de Madrid</h1>
+        <h1 class="page__title">Locales de juego y apuestas del municipio de Madrid: distribución territorial y análisis socidemográfico</h1>
         <p class="page__subtitle">Elaborado por Vicente Pérez Quintana.</p>
-        <p class="page__subtitle">Coordinación del trabajo de campo por Silvia González y Óscar Chaves.</p>
         <p class="page__subtitle">Madrid, octubre de 2019</p>
       </section>
 
@@ -71,7 +70,7 @@
         <p>Así las cosas, hemos de guardarnos de conclusiones precipitadas. El fenómeno de las casas de juego es reciente, probablemente no ha tocado techo. Las pautas de localización ahora conocidas dan pistas sobre el futuro previsible.</p>
         <p>Así, encontramos muchos barrios con un perfil socioeconómico y demográfico parecido al de los barrios con muchos locales que, sin embargo, carecen de ellos o que a lo sumo alojan 1-2.</p>
         <p>Hemos realizado un somero repaso de la localización de los establecimientos en otras grandes ciudades españolas (Barcelona, Valencia, Málaga, Sevilla, Bilbao y Zaragoza). Éstas confirman la importancia de las ubicaciones centrales vinculadas a zonas comerciales.</p>
-        <p>Por último, hay que destacar la localización de 53 locales de juego y salones de apuestas en las proximidades -a menos de 100 metros- de los colegios públicos y privados de primaria y/o secundaria. El Real Decreto 42/2019 del Consejo de Gobierno de la Comunidad de Madrid da un plazo -a todas luces excesivo- de 10 años para que esa situación desaparezca.</p>
+        <p>Por último, hay que destacar la localización de 53 locales de juego y salones de apuestas en las proximidades -a menos de 100 metros- de los colegios públicos y privados de primaria y/o secundaria. El <a href="http://www.bocm.es/boletin/CM_Orden_BOCM/2019/05/17/BOCM-20190517-2.PDF">Decreto 42/2019</a> del Consejo de Gobierno de la Comunidad de Madrid da un plazo -a todas luces excesivo- de 10 años para que esa situación desaparezca.</p>
         <p>Si centramos la atención -por razones obvias- en los centros públicos y privados en los que se imparte el nivel de secundaria, tenemos que casi la totalidad de los establecimientos de juego están respecto de ellos a una distancia inferior a los 500 metros. La proximidad define una situación de riesgo frente a la que es imperativo establecer normas de protección preventiva.</p>
         <!-- end sintesis -->
 
@@ -93,8 +92,8 @@
           </div>
         </div>
 
-        <p>En el trabajo de campo se han dado de baja 52 establecimientos. La mayoría de ellos bien no han abierto, bien han cerrado la actividad en el último año. Algunos desarrollan otros negocios (bares, restaurantes…) o son las oficinas de empresas de juegos… En algún caso son viviendas. En el lado contrario, se han añadido 74 establecimientos. Buena parte de ellos son administraciones de loterías en las que -además de la actividad propia- se practican otras apuestas-juegos y, asimismo, salones de recreo en los que -además de actividades recreativas- se realizan apuestas-juegos de azar. En pocos casos, la licencia de actividad es de bares, restaurantes… En un número reducido de locales no ha sido posible asociarlos a una licencia, sea porque carecen de ella, sea porque operan a partir de una declaración responsable, sea porque las direcciones de la licencia y la localización efectiva no coinciden, sea por otras razones, sin descartar las dificultades del rastreo en campo.</p>
-        <p>El universo, por tanto, queda formado por 400 locales y salones. En el cuadro se especifica la titularidad del negocio para los casos en que ha sido posible concretarla. Dos empresas (Codere y Sportium) ejercen un fuerte dominio: sea en solitario, sea asociadas con otros operadores, están presentes en, al menos, el 75% de los locales. En tercer lugar, pero muy lejos de las anteriores, está Luckia, en la que participan Egasa y Cafeterías Nebraska. Es indiscutible, por tanto, la situación de duopolio sobre la que se organiza el mercado del juego en la ciudad, tanto más si se considera que Sportiun es propiedad, el 100%, del fondo de inversión Blackstone y que Codere pertenece a Silver Point, Prudential PLC, Abrams Capital, Contrarian y Martínez Sampedro.</p>
+        <p>En el trabajo de campo se han dado de baja 52 establecimientos. La mayoría de ellos bien no han abierto, bien han cerrado la actividad en el último año. Algunos desarrollan otros negocios (bares, restaurantes…) o son las oficinas de empresas de juegos… En algún caso son viviendas. En el lado contrario, se han añadido 74 establecimientos. Buena parte de ellos son administraciones de loterías en las que se practican otras apuestas-juegos y, asimismo, salones de recreo en los que -además de actividades recreativas- se realizan apuestas-juegos de azar. En pocos casos, la licencia de actividad es de bares, restaurantes… En un número reducido de locales no ha sido posible asociarlos a una licencia, sea porque carecen de ella, sea porque operan a partir de una declaración responsable, sea porque las direcciones de la licencia y la localización efectiva no coinciden, sea por otras razones, sin descartar las dificultades del rastreo en campo.</p>
+        <p>El universo, por tanto, queda formado por 400 locales y salones. En el cuadro se especifica la titularidad del negocio para los casos en que ha sido posible concretarla. Dos empresas (Codere y Sportium) ejercen un fuerte dominio: sea en solitario, sea asociadas con otros operadores, están presentes en, al menos, el 75% de los locales. En tercer lugar, pero muy lejos de las anteriores, está Luckia, en la que participan Egasa. Es indiscutible, por tanto, la situación de duopolio sobre la que se organiza el mercado del juego en la ciudad, tanto más si se considera que Sportium es propiedad, el 100%, del fondo de inversión Blackstone y que Codere pertenece a Silver Point, Prudential PLC, Abrams Capital, Contrarian y la familia Martínez Sampedro.</p>
 
       </section>
     </div>
@@ -674,8 +673,8 @@
         <!-- end othercities -->
 
         <!-- start educationcenters -->
-        <h3 ref="educationcenters">Cercanía a los institutos públicos</h3>
-        <p>Uno de los aspectos de los locales de juego y las casas de apuestas que más preocupa a la ciudadanía es la cercanía de éstas a los institutos. El Real Decreto 42/2019 del Consejo de Gobierno de la Comunidad de Madrid da nueva redacción al artículo 34 del Reglamento de Juego, regulando que cualquier establecimiento ha de estar a una distancia no inferior a 100 metros respecto de los colegios en que se impartan enseñanzas regladas y obligatorias (primaria o secundaria). A su vez, la disposición transitoria sexta dice que los locales que estén dentro de ese radio disponen de un periodo de 10 años para adaptarse.</p>
+        <h3 ref="educationcenters">Cercanía a los colegios de primaria y secundaria</h3>
+        <p>Uno de los aspectos de los locales de juego y las casas de apuestas que más preocupa a la ciudadanía es la cercanía de éstas a los centros de enseñanza por el efecto que puedan ejercer sobre el alumnado. El <a href="http://www.bocm.es/boletin/CM_Orden_BOCM/2019/05/17/BOCM-20190517-2.PDF">Decreto 42/2019</a> del Consejo de Gobierno de la Comunidad de Madrid da nueva redacción al artículo 34 del Reglamento de Juego, regulando que cualquier establecimiento ha de estar a una distancia no inferior a 100 metros respecto de los colegios en que se impartan enseñanzas regladas y obligatorias (primaria o secundaria). A su vez, la disposición transitoria sexta dice que los locales que estén dentro de ese radio disponen de un periodo de 10 años para adaptarse.</p>
 
         <p>Según los datos del IECM, en la ciudad hay 863 colegios públicos y privados que imparten primaria y/o secundaria. En esa cifra se incluyen, además de los colegios, los institutos, los centros de educación especial y los centros extranjeros en España. Identificamos 53 colegios con locales dentro del radio de los 100 metros, un 6,1% del total de centros. De ellos, 30 son privados y 23 públicos<sup>6</sup>. En el siguiente cuadro se ofrece el detalle de los colegios afectados. Los locales «mal colocados» suman 61.</p>
 
@@ -687,7 +686,7 @@
 
         <table-locals-by-educationcenters/>
 
-        <p>A continuación se incluyen tres mapas del mayor interés. El primero arroja una vista panorámica de la confluencia de los locales y los colegios. Es muy significativo el contraste entre la amplia cobertura territorial de los centros educativos y la concentración de los locales y salones. La superposición de radios entre sendas redes se produce en el ámbito de éstos. En el segundo mapa  se recoge, a modo de ejemplo, un colegio que tiene en su entorno inmediato tres establecimientos. Nótese cómo dos de ellos están a bastante menos de 100 metros. En el tercero mapa, por último, se concretan los colegios en cuyo radio de 100 metros a la redonda hay uno o más establecimientos. Centro, Puente de Vallecas y Latina son los tres distritos con más colegios afectados.</p>
+        <p>A continuación se incluyen tres mapas del mayor interés. El primero arroja una vista panorámica de la confluencia de los locales y los colegios. Es muy significativo el contraste entre la amplia cobertura territorial de los centros educativos y la concentración de los locales y salones. La superposición de radios entre sendas redes se produce en el ámbito de éstos. En el tercer mapa se recoge, a modo de ejemplo, un colegio que tiene en su entorno inmediato tres establecimientos. Nótese cómo dos de ellos están a bastante menos de 100 metros. En el tercero mapa, por último, se concretan los colegios en cuyo radio de 100 metros a la redonda hay uno o más establecimientos. Centro, Puente de Vallecas y Latina son los tres distritos con más colegios afectados.</p>
 
         <figure>
           <img src="/static/img/maps/localescolegios.jpg" alt="Mapa de locales y colegios de la Comunidad de Madrid">
@@ -704,9 +703,11 @@
           <figcaption>Colegios con alǵun local a menos de 100m. FRAVM.</figcaption>
         </figure>
 
-        <p>Aunque la normativa vigente fija una distancia mínima de 100 metros de cada local y salón a un colegio, es indudable que el caso más preocupante y sobre el que merece la pena enfatizar la atención es el de la distancia respecto de los centros de secundaria. La regla de los 100 metros parece muy tímida. En el siguiente cuadro se estima el número de locales y salones que tienen algún colegio dentro de su área considerando varios radios.</p>
+        <p>Aunque la normativa vigente fija una distancia mínima de 100 metros de cada local y salón a un colegio, es indudable que el caso más preocupante y sobre el que merece la pena enfatizar la atención es el de la distancia respecto de los centros de secundaria. La regla de los 100 metros parece muy tímida. En el siguiente cuadro se estima el número de locales y salones que tienen algún colegio dentro de su área considerando varios radios. Se observa que casi la totalidad de los establecimientos están a menos de 500 metros, es decir, operan en un entorno próximo. A partir de 100 metros, la progresión de centros con establecimientos próximos crece muy aprisa. Si es un 10% el paquete de locales con un instituto o centro de secundaria a menos de 100 metros, la proporción sube a un 25% en el siguiente escalón (150 metros) y a un 42% en el tercero (200 metros). Bastante más de la mitad de los locales de juego y salones de apuestas están a menos de 250 metros, esto es, a menos de 3 minutos.</p>
 
         <chart-locals-by-educationcenters/>
+
+        <p>Especialmente significativa es la situación de los centros de secundaria con varios colegios en sus inmediaciones. En particular, se contabilizan 132 centros con cuatro o más locales dentro de un radio de 500 metros a la redonda.</p>
         <!-- end educationcenters -->
 
       </section>
