@@ -4,7 +4,7 @@
     <div class="overmap">
       <div class="overmap__wrap">
 
-        <div class="overmap__menu">
+        <div class="overmap__menu" :class="{active:menuexpanded}">
           <h4>Locales de apuestas</h4>
           <ul>
             <li>
@@ -13,7 +13,7 @@
             </li>
             <li>
               <input id="locales-scraping" type="checkbox" v-model="localesdadasign">
-              <label for="locales-scraping">Datos Dadasign</label>
+              <label for="locales-scraping">Datos scraping</label>
             </li>
           </ul>
           <h4>Centros de enseñanza</h4>
@@ -37,6 +37,11 @@
           </div>
         </div>
 
+        <div class="overmap__menu-launcher">
+          <img class="hamburguer" src="/static/img/icons/menu.svg" alt="Abrir menu" v-show="!menuexpanded" @click="menuexpanded = true">
+          <img class="close" src="/static/img/icons/close.svg" alt="Cerrar menu" v-show="menuexpanded" @click="menuexpanded = false">
+        </div>
+
         <div class="overmap__disclaimer" v-if="showDisclaimer">
           <div class="overmap__disclaimer-wrap">
             <p>Los datos aqui mostrados proceden de diversas <router-link :to="{name:'sources'}">fuentes</router-link> y su posición puede no ser exacta.</p>
@@ -46,6 +51,9 @@
           </div>
         </div>
 
+        <div class="overmap__frame">
+          <a href="http://www.stopcasasdeapuestas.com">stopcasasdeapuestas.com</a>
+        </div>
 
       </div>
     </div>
@@ -68,6 +76,7 @@ export default {
       height: 1200,
       map: {},
       showDisclaimer: true,
+      menuexpanded: false,
       localesfravm: false,
       localesdadasign: false,
       educacioncmadrid: false,
@@ -168,19 +177,50 @@ export default {
   pointer-events: none;
 
   &__wrap {
-    padding: 60px 20px 20px;
+    padding: 20px 20px 20px;
     position: relative;
     height: 100%;
     box-sizing: border-box;
   }
 
-  &__menu {
-    padding: 10px 16px 10px 10px;
+  &__frame {
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+    pointer-events: all;
+    font-size: smaller;
+  }
+
+  &__menu-launcher {
     display: inline-block;
     background: white;
     pointer-events: all;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    line-height: 0;
+    vertical-align: top;
+    img {
+      padding: 10px;
+      width: 16px;
+      margin: 0;
+    }
+  }
+
+  &__menu {
+    padding: 10px 16px 10px 10px;
+    display: none;
+    background: white;
+    pointer-events: all;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    &.active {
+      display: inline-block;
+    }
+    h2 {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 4px;
+    }
     h4 {
       font-size: 16px;
       margin-top: 0;
@@ -242,6 +282,18 @@ export default {
     }
   }
 
+}
+
+@media screen and (min-width: 740px) {
+  .overmap {
+    &__menu-launcher {
+      display: none;
+    }
+
+    &__menu {
+      display: inline-block !important;
+    }
+  }
 }
 
 </style>

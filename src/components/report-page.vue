@@ -8,6 +8,10 @@
         <p class="page__subtitle">Madrid, octubre de 2019</p>
       </section>
 
+      <div style="text-align: center;">
+        <a class="button" href="/static/docs/informe-locales-apuestas-fravm.pdf">Descargar informe en PDF</a>
+      </div>
+
       <section class="page__section page__section--contents">
         <h4>Índice de contenidos</h4>
         <ul>
@@ -45,6 +49,7 @@
       </section>
 
       <section class="page__section page__section--text">
+
 
         <!-- start sintesis -->
         <h3 ref="sintesis">Síntesis</h3>
@@ -283,7 +288,11 @@
           <figcaption>Barrios según renta. FRAVM.</figcaption>
         </figure>
         
-        <chart-neighborhoods-by-rent-locals/>
+        <!-- <chart-neighborhoods-by-rent-locals/> -->
+        <figure>
+          <img src="/static/img/charts/scatter-renta.png" alt="Barrios según renta y número de locales">
+          <figcaption>Barrios según renta y número de locales. FRAVM.</figcaption>
+        </figure>
 
         <p>El diagrama de cajas ilustra perfectamente la situación. En él se agrupan los barrios en cinco niveles de renta (de menos a más) y para cada uno se cuenta con la distribución del número de locales, señalando el valor máximo, mínimo, la mediana y los percentiles 25 y 75. A mayor amplitud de la caja, mayor dispersión de la variable. El máximo y la mediana son elevados en los estratos bajos de renta y desciende muy significativamente al pasar de uno al siguiente. Nótese la desemejanza extrema entre el primer y el quinto estrato.</p>
 
@@ -294,7 +303,11 @@
 
         <p>En el gráfico siguiente se representa el promedio no ponderado de los ingresos medios de los hogares de los barrios clasificados según el número de locales de juego. El sentido descendente de la curva es palmario.</p>
 
-        <chart-neighborhoods-by-rent-locals-line/>
+        <figure>
+          <img src="/static/img/charts/fever-renta.png" alt="Barrios según renta y número de locales">
+          <figcaption>Barrios según renta y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-rent-locals-line/> -->
 
         <h4 ref="paro">Tasa absoluta de paro</h4>
 
@@ -319,14 +332,22 @@
           <figcaption>Barrios según tasa de desempleo. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-unemployment-locals/>
+        <figure>
+          <img src="/static/img/charts/scatter-paro.png" alt="Barrios según tasa de desempleo y número de locales">
+          <figcaption>Barrios según tasa de desempleo y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-unemployment-locals/> -->
 
         <figure>
           <img src="/static/img/charts/boxplot-paro.png" alt="Barrios según tasa de desempleo" style="width:300px; height: auto;">
           <figcaption>Barrios según tasa de desempleo. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-unemployment-locals-line/>
+        <figure>
+          <img src="/static/img/charts/fever-paro.png" alt="Barrios según tasa de desempleo y número de locales">
+          <figcaption>Barrios según tasa de desempleo y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-unemployment-locals-line/> -->
         
         <h4 ref="educacion">Nivel educativo</h4>
 
@@ -351,14 +372,22 @@
           <figcaption>Barrios según nivel de estudios bajos. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-education-locals/>
+        <figure>
+          <img src="/static/img/charts/scatter-estudios.png" alt="Barrios según nivel de estudios bajos y número de locales">
+          <figcaption>Barrios según nivel de estudios bajos y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-education-locals/> -->
 
         <figure>
           <img src="/static/img/charts/boxplot-estudios.png" alt="Barrios según nivel de estudios bajos" style="width:300px; height: auto;">
           <figcaption>Barrios según nivel de estudios bajos. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-education-locals-line/>
+        <figure>
+          <img src="/static/img/charts/fever-estudios.png" alt="Barrios según nivel de estudios bajos y número de locales">
+          <figcaption>Barrios según nivel de estudios bajos y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-education-locals-line/> -->
         
         <h4 ref="distanciasol">Distancia de los barrios a la Puerta del Sol</h4>
 
@@ -383,14 +412,22 @@
     <div class="page__wrap">
       <section class="page__section page__section--text">
 
-        <chart-neighborhoods-by-distance-locals/>
+        <figure>
+          <img src="/static/img/charts/scatter-distancia.png" alt="Barrios según distancia a la Puerta del Sol y número de locales">
+          <figcaption>Barrios según distancia a la Puerta del Sol y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-distance-locals/> -->
 
         <figure>
           <img src="/static/img/charts/boxplot-distancia.png" alt="Barrios según distancia a la Puerta del Sol" style="width:300px; height: auto;">
           <figcaption>Barrios según distancia a la Puerta del Sol. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-distance-locals-line/>
+        <figure>
+          <img src="/static/img/charts/fever-distancia.png" alt="Barrios según distancia a la Puerta del Sol y número de locales">
+          <figcaption>Barrios según distancia a la Puerta del Sol y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-distance-locals-line/> -->
         
         <h4 ref="poblacion">Población</h4>
 
@@ -415,14 +452,22 @@
           <figcaption>Barrios según población. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-population-locals/>
+        <figure>
+          <img src="/static/img/charts/scatter-poblacion.png" alt="Barrios según población y número de locales">
+          <figcaption>Barrios según población y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-population-locals/> -->
 
         <figure>
           <img src="/static/img/charts/boxplot-poblacion.png" alt="Barrios según población" style="width:300px; height: auto;">
           <figcaption>Barrios según población. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-population-locals-line/>
+        <figure>
+          <img src="/static/img/charts/fever-poblacion.png" alt="Barrios según población y número de locales">
+          <figcaption>Barrios según población y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-population-locals-line/> -->
         
         <h4 ref="densidad">Densidad</h4>
 
@@ -445,14 +490,22 @@
           <figcaption>Barrios según densidad. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-density-locals/>
+        <figure>
+          <img src="/static/img/charts/scatter-densidad.png" alt="Barrios según densidad y número de locales">
+          <figcaption>Barrios según densidad y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-density-locals/> -->
 
         <figure>
           <img src="/static/img/charts/boxplot-densidad.png" alt="Barrios según densidad" style="width:300px; height: auto;">
           <figcaption>Barrios según densidad. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-density-locals-line/>
+        <figure>
+          <img src="/static/img/charts/scatter-densidad.png" alt="Barrios según densidad y número de locales">
+          <figcaption>Barrios según densidad y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-density-locals-line/> -->
 
         <h4 ref="jovenes">Proporción de jóvenes</h4>
 
@@ -475,14 +528,22 @@
           <figcaption>Barrios según tasa de jóvenes. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-youngs-locals/>
+        <figure>
+          <img src="/static/img/charts/scatter-jovenes.png" alt="Barrios según tasa de jóvenes y número de locales">
+          <figcaption>Barrios según tasa de jóvenes y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-youngs-locals/> -->
 
         <figure>
           <img src="/static/img/charts/boxplot-jovenes.png" alt="Barrios según tasa de jóvenes" style="width:300px; height: auto;">
           <figcaption>Barrios según tasa de jóvenes. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-youngs-locals-line/>
+        <figure>
+          <img src="/static/img/charts/fever-jovenes.png" alt="Barrios según tasa de jóvenes y número de locales">
+          <figcaption>Barrios según tasa de jóvenes y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-youngs-locals-line/> -->
 
         <h4 ref="senilidad">Tasa de senilidad</h4>
 
@@ -505,14 +566,22 @@
           <figcaption>Barrios según tasa de senilidad. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-senility-locals/>
+        <figure>
+          <img src="/static/img/charts/scatter-senilidad.png" alt="Barrios según tasa de senilidad y número de locales">
+          <figcaption>Barrios según tasa de senilidad y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-senility-locals/> -->
 
         <figure>
           <img src="/static/img/charts/boxplot-senilidad.png" alt="Barrios según tasa de senilidad" style="width:300px; height: auto;">
           <figcaption>Barrios según tasa de senilidad. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-senility-locals-line/>
+        <figure>
+          <img src="/static/img/charts/fever-senilidad.png" alt="Barrios según tasa de senilidad y número de locales">
+          <figcaption>Barrios según tasa de senilidad y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-senility-locals-line/> -->
 
         <h4 ref="extranjeros">Tasa de extranjería</h4>
 
@@ -535,14 +604,22 @@
           <figcaption>Barrios según tasa de extranjeros. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-foreigns-locals/>
+        <figure>
+          <img src="/static/img/charts/scatter-extranjeros.png" alt="Barrios según tasa de extranjeros y número de locales">
+          <figcaption>Barrios según tasa de extranjeros y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-foreigns-locals/> -->
 
         <figure>
           <img src="/static/img/charts/boxplot-extranjeros.png" alt="Barrios según tasa de extranjeros" style="width:300px; height: auto;">
           <figcaption>Barrios según tasa de extranjeros. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-foreigns-locals-line/>
+        <figure>
+          <img src="/static/img/charts/fever-extranjeros.png" alt="Barrios según tasa de extranjeros y número de locales">
+          <figcaption>Barrios según tasa de extranjeros y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-foreigns-locals-line/> -->
 
         <h4 ref="preciovivienda">Precio de las viviendas</h4>
 
@@ -553,9 +630,17 @@
           <figcaption>Barrios según precio del metro cuadrado. FRAVM.</figcaption>
         </figure>
 
-        <chart-neighborhoods-by-price-locals/>
+        <figure>
+          <img src="/static/img/charts/scatter-precio.png" alt="Barrios según precio del metro cuadrado y número de locales">
+          <figcaption>Barrios según precio del metro cuadrado y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-price-locals/> -->
 
-        <chart-neighborhoods-by-price-locals-line/>
+        <figure>
+          <img src="/static/img/charts/fever-precio.png" alt="Barrios según precio del metro cuadrado y número de locales">
+          <figcaption>Barrios según precio del metro cuadrado y número de locales. FRAVM.</figcaption>
+        </figure>
+        <!-- <chart-neighborhoods-by-price-locals-line/> -->
 
         <!-- end determinantes -->
 
@@ -589,7 +674,7 @@
         <p>Después de ensayar diversos modelos de regresión, uno de los que mejores resultados arrojan es el que liga a la raíz cuadrada del número de locales con las variables densidad, % de inmigrantes y población. Los modelos alternativos examinados, por unas u otras razones, incumplen los criterios del análisis de mínimos cuadrados<sup>5</sup>. La correlación múltiple es alta (0,721), lo que significa que el 52% de la varianza está explicada. Las variables renta, distancia y precios no aparecen, cuando sí lo hacen en los análisis de contingencia y en las correlaciones bivariadas. Sucede que su influencia es canalizada por las tres variables introducidas en el modelo, con las que están correlacionadas.</p>
 
         <div class="legend">
-          <div class="legend__wrap">
+          <div class="legend__wrap" style="position: static; width: initial;">
             <sup>5</sup> El escogido cumple el criterio de normalidad de los residuos (Jarque-Bera = 4,93, con p = 0,085), el de no heterocedasticidad (contraste de heterocedasticidad de White = 13,49, inferior al valor crítico de 16,92) y el de no colinealidad (los factores de inflación de la varianza de las tres variables son muy inferiores a 10). A su vez, el modelo está bien especificado, según el contraste de Ramsey (F = 1,57 y p = 0,212, superior, pues, a 0.05). Todos los coeficientes son significativos individualmente (valores de t) y en conjunto (valor de F). 
           </div>
         </div>
