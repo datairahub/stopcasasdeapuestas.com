@@ -7,6 +7,7 @@ Vue.component('home-page',             require('./home-page').default);
 Vue.component('report-page',           require('./report-page').default);
 Vue.component('proposal-page',         require('./proposal-page').default);
 Vue.component('map-page',              require('./map-page').default);
+Vue.component('iframe-page',           require('./iframe-page').default);
 Vue.component('data-page',             require('./data-page').default);
 Vue.component('sources-page',          require('./sources-page').default);
 Vue.component('contact-page',          require('./contact-page').default);

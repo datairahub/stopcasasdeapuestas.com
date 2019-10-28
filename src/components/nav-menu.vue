@@ -1,6 +1,6 @@
 <template>
     <div class="menu">
-        <div class="menu__wrap">
+        <div class="menu__wrap" v-show="$route.name != 'iframe'">
             <div class="menu__items">
                 <div class="menu__logo">
                     <router-link :to="{name:'home'}">
