@@ -53,7 +53,7 @@ Vue.component('chart-locals-by-educationcenters',                 require('./sec
 Vue.component('chart-education-near-locals',                      require('./sections/chart-education-near-locals').default);
 
 Vue.component('map-districts-by-locals',                   require('./sections/map-districts-by-locals').default);
-//Vue.component('map-neighborhoods-by-locals',              require('./sections/map-neighborhoods-by-locals').default);
+Vue.component('map-neighborhoods-by-locals',               require('./sections/map-neighborhoods-by-locals').default);
 
 
 // Charts

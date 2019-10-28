@@ -116,7 +116,7 @@
 
         <map-districts-by-locals/>
 
-        <p>MAPA</p>
+        <map-neighborhoods-by-locals/>
 
         <p>Una rápida inspección de los mapas muestra una pauta de acusada concentración de los locales en los distritos/barrios de la margen occidental de la almendra central y en la periferia sur próxima a la M-30.</p>
         <p>En concreto, la distribución por distritos permite a simple vista diferenciar cuatro grandes grupos. Carabanchel, Puente de Vallecas, Tetuán, Centro, Usera, Latina y Ciudad Lineal absorben el 61% de los establecimientos. Arganzuela, Chamberí y Villaverde aparecen algo despegados de los anteriores, en una segunda posición. San Blas-Canillejas, Salamanca, Chamartín y Fuencarral-El Pardo se distancian en la tercera posición del ranking. Cierran, con pocos locales de juego, siete distritos, entre ellos los más periféricos (Villa de Vallecas, Vicálvaro y Barajas), más uno céntrico (Retiro) y dos intermedios (Hortaleza y Moncloa-Aravaca), junto a Moratalaz.</p>

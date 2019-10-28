@@ -200,7 +200,7 @@ export default {
     barriosmadrid(val){
       if(val){
         if(val && !this.loadedPoints.barriosmadrid){
-          d3.json("static/data/MAD_adm5.json").then(data=>{
+          d3.json("static/data/MAD_adm6.json").then(data=>{
             this.loadedPoints.barriosmadrid = true;
             this.layers.barriosmadrid = data;
             this.loadLayers(this.layers.barriosmadrid)

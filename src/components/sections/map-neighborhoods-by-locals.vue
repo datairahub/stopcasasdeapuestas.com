@@ -16,9 +16,10 @@ export default {
             datum: false,
             config: {
                 color: 'steelblue',
-                label: 'name',
+                label: 'DESBDT',
                 scale: 60000,
-                center: [-3.7,40.47],
+                center: [-3.7,40.482],
+                key: 'NUMPOINTS'
             },
             title: 'Locales por barrios',
             source: 'Fuente: FRAVM.',
@@ -32,3 +33,12 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.chart__wrap--geojsonmap {
+    path {
+        stroke: rgba(0, 0, 0, 0.3);
+        stroke-width: 1px;
+    }
+}
+</style>

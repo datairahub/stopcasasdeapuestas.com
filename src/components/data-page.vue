@@ -11,7 +11,7 @@
         <p>Censo de locales de apuestas proporcionado por el Ayto. de Madrid y completado con locales obtenidos por la FRAVM.<br><a class="button cta" href="/static/data/locales-fravm.csv">Descargar (geoposiciones)</a> <a class="button cta" href="/static/data/locales-fravm-completo.csv">Descargar (archivo completo)</a></p>
         <p>Censo de locales de apuestas a nivel estatal obtenido por Dadasign mediante técnicas de scraping.<br><a class="button cta" href="/static/data/locales-dadasign.csv">Descargar (geoposiciones)</a> <a class="button cta" href="/static/data/locales-dadasign-completo.csv">Descargar (archivo completo)</a></p>
         <p>Censo de centros educativos públicos no universitarios de la Comunidad de Madrid.<br><a class="button cta" href="/static/data/educacion-cmadrid.csv">Descargar</a></p>
-        <p>Datos demográficos de los barrios del municipio de Madrid.<br><a class="button cta" href="/static/data/MAD_adm5.json">Descargar</a></p>
+        <p>Datos demográficos de los barrios del municipio de Madrid.<br><a class="button cta" href="/static/data/MAD_adm6.json">Descargar</a></p>
         <br><br><br>
       </section>
     </div>
