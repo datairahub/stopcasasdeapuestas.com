@@ -25,7 +25,7 @@ export default {
             config: {
                 key: 'locals',
                 value: 'total',
-                color: '#bca3ca',
+                color: 'steelblue',
                 yscaleticks: 6,
                 yAxis: 'Nº de locales',
             },

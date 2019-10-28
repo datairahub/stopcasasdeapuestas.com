@@ -16,13 +16,13 @@
       <section class="page__section page__section--logos">
         <div class="page__wrap">
           Elaborado por
-          <a href="">
+          <a href="https://aavvmadrid.org/">
             <img src="/static/img/logos/FRAVM.jpg" alt="FRAVM">
           </a>
         </div>
         <div class="page__wrap">
           Con la colaboración de
-          <a href="">
+          <a href="https://www.dadasign.xyz/">
             <img src="/static/img/logos/dadasign.png" alt="Dadasign" style="margin-top:5%">
           </a>
         </div>

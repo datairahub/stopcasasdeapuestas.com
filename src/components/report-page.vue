@@ -708,6 +708,13 @@
         <chart-locals-by-educationcenters/>
 
         <p>Especialmente significativa es la situación de los centros de secundaria con varios colegios en sus inmediaciones. En particular, se contabilizan 132 centros con cuatro o más locales dentro de un radio de 500 metros a la redonda.</p>
+        
+        <chart-education-near-locals/>
+
+        <figure>
+          <img src="/static/img/charts/mapa-colegios.jpg" alt="Centros de secundaria con 4 locales o más en un radio de 500m">
+          <figcaption>Centros de secundaria con 4 locales o más en un radio de 500m. FRAVM.</figcaption>
+        </figure>
         <!-- end educationcenters -->
 
       </section>
