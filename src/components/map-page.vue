@@ -70,7 +70,7 @@
 
         <div class="overmap__frame">
           <router-link v-if="$route.name=='map'" :to="{name:'iframe'}">Mapa para iframe</router-link>
-          <a v-if="$route.name=='iframe'" href="http://www.stopcasasdeapuestas.com">stopcasasdeapuestas.com</a>
+          <a v-if="$route.name=='iframe'" href="https://www.stopcasasdeapuestas.com">stopcasasdeapuestas.com</a>
         </div>
 
       </div>
