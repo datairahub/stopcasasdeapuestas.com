@@ -25,6 +25,9 @@
           <a href="https://www.dadasign.xyz/">
             <img src="/static/img/logos/dadasign.png" alt="Dadasign" style="margin-top:5%">
           </a>
+          <a href="https://www.madrid.es/portal/site/munimadrid" style="margin-top:20px">
+            <img src="/static/img/logos/aytomadrid.png" alt="Ayto Madrid">
+          </a>
         </div>
       </section>
     </div>
