@@ -39,7 +39,7 @@ class D3MapPoints extends D3Map  {
                 this.popup.setLatLng(e.latlng);
                 this.popup.setContent(d.name);
                 this.map.openPopup(this.popup);
-                this.pointevents.click(d);
+                //this.pointevents.click(d);
             })
             this.circles[d.id] = circle
         });
@@ -66,6 +66,27 @@ class D3MapPoints extends D3Map  {
                 style: {stroke: 0, fillOpacity: 0.7},
             })
             lgeo.addTo(this.map)
+            lgeo.on('click', e=>{
+                this.popup.setLatLng(e.latlng);
+                let content = `
+                <div>
+                    <strong>${feature.properties.DESBDT}</strong><br>
+                    <span>Locales: <strong>${feature.properties.NUMPOINTS}</strong><br>
+                    Renta media: <strong>${feature.properties.RENTA}€</strong></br>
+                    Paro: <strong>${feature.properties.PARO}%</strong></br>
+                    Estudios bajos: <strong>${feature.properties.ESTUDIOS_B}%</strong></br>
+                    Densidad: <strong>${feature.properties.DENSIDAD}</strong></br>
+                    Población: <strong>${feature.properties.POBLACION}hab</strong></br>
+                    Jóvenes: <strong>${feature.properties.JOVENES}%</strong></br>
+                    Mayores 65: <strong>${feature.properties.SENIL}%</strong></br>
+                    Extranjeros: <strong>${feature.properties.EXTRANJERO}%</strong></br>
+                    Distancia a P. Sol: <strong>${feature.properties.DISTANCIA}m</strong></br>
+                    Precio m2: <strong>${feature.properties.PRECIO}€</strong></span>
+                </div>`
+                this.popup.setContent(content);
+                this.map.openPopup(this.popup);
+                //this.pointevents.click(d);
+            })
             this.layers.push({
                 feature: feature,
                 layer: lgeo
