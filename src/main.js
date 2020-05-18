@@ -1,7 +1,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router';
+import * as D3BarChart from 'vue-d3-charts'
 
+console.log(D3BarChart);
+
+Vue.use(D3BarChart)
 import './assets/styles/_index.scss';
 
 Vue.config.productionTip = false
